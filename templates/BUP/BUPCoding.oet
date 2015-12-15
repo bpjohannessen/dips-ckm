@@ -1,0 +1,1256 @@
+<?xml version="1.0"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
+  <id>5ce45cf5-90ce-4be5-86d0-e7b7bb2b4ff5</id>
+  <name>BUPCoding</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose />
+      <use />
+      <misuse />
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value />
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value />
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value />
+      </item>
+      <item>
+        <key>Client group</key>
+        <value />
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value />
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value />
+      </item>
+      <item>
+        <key>Issues</key>
+        <value />
+      </item>
+      <item>
+        <key>Owner</key>
+        <value />
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value />
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value />
+      </item>
+      <item>
+        <key>User roles</key>
+        <value />
+      </item>
+    </other_details>
+  </description>
+  <definition xsi:type="COMPOSITION" archetype_id="openEHR-EHR-COMPOSITION.bup_axial_coding.v0" concept_name="Bup axial coding">
+    <Content xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.bup_axe.v0" concept_name="Bup axe" max="1" path="/content[at0001]" name="Axe 1">
+      <Item xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.problem_diagnosis.v1" concept_name="Problem/diagnose" path="/items">
+        <Rule path="/data[at0001]/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>ARK-ICD::F03::Annen og uspesifisert demens</includedValues>
+            <includedValues>ARK-ICD::F04::Organisk amnestisk syndrom, ikke utløst av rusmidler</includedValues>
+            <includedValues>ARK-ICD::F050::Delirium som ikke forekommer i forbindelse med demens</includedValues>
+            <includedValues>ARK-ICD::F0500::Delirium uten demens, uten tilleggssymptomer</includedValues>
+            <includedValues>ARK-ICD::F0501::Delirium uten demens, med vrangforestillinger</includedValues>
+            <includedValues>ARK-ICD::F0502::Delirium uten demens, med hallusinasjoner</includedValues>
+            <includedValues>ARK-ICD::F0503::Delirium uten demens, med depressive symptomer</includedValues>
+            <includedValues>ARK-ICD::F0504::Delirium uten demens, med andre blandede symptomer</includedValues>
+            <includedValues>ARK-ICD::F051::Delirium i forbindelse med demens</includedValues>
+            <includedValues>ARK-ICD::F0510::Delirium i forbindelse med demens, uten tilleggssymptomer</includedValues>
+            <includedValues>ARK-ICD::F0511::Delirium med demens, med vrangforestillinger</includedValues>
+            <includedValues>ARK-ICD::F0512::Delirium med demens, med hallusinasjoner</includedValues>
+            <includedValues>ARK-ICD::F0513::Delirium med demens, med depressive symptomer</includedValues>
+            <includedValues>ARK-ICD::F0514::Delirium i forbindelse med demens, andre blandede symptomer</includedValues>
+            <includedValues>ARK-ICD::F058::Annet spesifisert delirium</includedValues>
+            <includedValues>ARK-ICD::F0580::Annet spesifisert delirium uten tilleggssymptomer</includedValues>
+            <includedValues>ARK-ICD::F0581::Annet delirium, med vrangforestillinger</includedValues>
+            <includedValues>ARK-ICD::F0582::Annet delirium, med hallusinasjoner</includedValues>
+            <includedValues>ARK-ICD::F0583::Annet delirium, med depressive symptomer</includedValues>
+            <includedValues>ARK-ICD::F0584::Annet spesifisert delirium med andre blandede symptomer</includedValues>
+            <includedValues>ARK-ICD::F059::Uspesifisert delirium</includedValues>
+            <includedValues>ARK-ICD::F0590::Uspesifisert delirium uten tilleggssymptomer</includedValues>
+            <includedValues>ARK-ICD::F0591::Uspesifisert delirium, med vrangforestillinger</includedValues>
+            <includedValues>ARK-ICD::F0592::Uspesifisert delirium, med hallusinasjoner</includedValues>
+            <includedValues>ARK-ICD::F0593::Uspesifisert delirium, med depressive symptomer</includedValues>
+            <includedValues>ARK-ICD::F0594::Uspesifisert delirium med andre blandede symptomer</includedValues>
+            <includedValues>ARK-ICD::F060::Organisk hallusinose</includedValues>
+            <includedValues>ARK-ICD::F0600::Organisk hallusinose uten tilleggssymptomer</includedValues>
+            <includedValues>ARK-ICD::F0601::Organisk hallusinose, med vrangforestillinger</includedValues>
+            <includedValues>ARK-ICD::F0603::Organisk hallusinose, med depressive symptomer</includedValues>
+            <includedValues>ARK-ICD::F0604::Organisk hallusinose med andre blandede symptomer</includedValues>
+            <includedValues>ARK-ICD::F061::Organisk kataton lidelse</includedValues>
+            <includedValues>ARK-ICD::F0610::Organisk kataton lidelse uten tilleggssymptomer</includedValues>
+            <includedValues>ARK-ICD::F0611::Organisk kataton lidelse, mest vrangforestillinger</includedValues>
+            <includedValues>ARK-ICD::F0612::Organisk kataton lidelse, med hallusinasjoner</includedValues>
+            <includedValues>ARK-ICD::F0613::Organisk kataton lidelse, med depressive sympt</includedValues>
+            <includedValues>ARK-ICD::F0614::Organisk kataton lidelse med andre blandede symptomer</includedValues>
+            <includedValues>ARK-ICD::F062::Organisk paranoid lidelse [schizofrenilignende lidelse]</includedValues>
+            <includedValues>ARK-ICD::F0620::Organisk paranoid lidelse uten tilleggssymptomer</includedValues>
+            <includedValues>ARK-ICD::F0621::Organisk paranoid lidelse, med vrangforestillinger</includedValues>
+            <includedValues>ARK-ICD::F0622::Organisk paranoid lidelse, med hallusinasjoner</includedValues>
+            <includedValues>ARK-ICD::F0623::Organisk paranoid lidelse, med depressive symptomer</includedValues>
+            <includedValues>ARK-ICD::F0624::Organisk paranoid lidelse med andre blandede symptomer</includedValues>
+            <includedValues>ARK-ICD::F063::Organiske affektive lidelser [stemningslidelser]</includedValues>
+            <includedValues>ARK-ICD::F0630::Organisk manisk lidelse</includedValues>
+            <includedValues>ARK-ICD::F0631::Organisk bipolar lidelse</includedValues>
+            <includedValues>ARK-ICD::F0632::Organisk depressiv lidelse</includedValues>
+            <includedValues>ARK-ICD::F0633::Organisk blandet affektiv lidelse</includedValues>
+            <includedValues>ARK-ICD::F064::Organisk angstlidelse</includedValues>
+            <includedValues>ARK-ICD::F0640::Organisk angstlidelse uten tilleggssymptomer</includedValues>
+            <includedValues>ARK-ICD::F0641::Organisk angstlidelse med vrangforestillinger</includedValues>
+            <includedValues>ARK-ICD::F0642::Organisk angstlidelse med hallusinasjoner</includedValues>
+            <includedValues>ARK-ICD::F0643::Organisk angstlidelse hovedsakelig med depressive symptomer</includedValues>
+            <includedValues>ARK-ICD::F0644::Organisk angstlidelse med andre blandede symptomer</includedValues>
+            <includedValues>ARK-ICD::F065::Organisk dissosiativ lidelse</includedValues>
+            <includedValues>ARK-ICD::F0650::Organisk dissosiativ lidelse uten tilleggssymptomer</includedValues>
+            <includedValues>ARK-ICD::F0651::Organisk dissosiativ lidelse med vrangforestillinger</includedValues>
+            <includedValues>ARK-ICD::F0652::Organisk dissosiativ lidelse med hallusinasjoner</includedValues>
+            <includedValues>ARK-ICD::F0653::Organisk dissosiativ lidelse med depressive symptomer</includedValues>
+            <includedValues>ARK-ICD::F0654::Organisk dissosiativ lidelse med andre blandede symptomer</includedValues>
+            <includedValues>ARK-ICD::F066::Organisk emosjonell labilitet [asteni]</includedValues>
+            <includedValues>ARK-ICD::F0660::Organisk emosjonell labilitet uten tilleggssymptomer</includedValues>
+            <includedValues>ARK-ICD::F0661::Organisk emosjonell labilitet med vrangforestillinger</includedValues>
+            <includedValues>ARK-ICD::F0662::Organisk emosjonell labilitet med hallusinasjoner</includedValues>
+            <includedValues>ARK-ICD::F0663::Organisk emosjonell labilitet med depressive symptomer</includedValues>
+            <includedValues>ARK-ICD::F0664::Organisk emosjonell labilitet med andre blandede symptomer</includedValues>
+            <includedValues>ARK-ICD::F067::Lett organisk kognitiv lidelse</includedValues>
+            <includedValues>ARK-ICD::F0670::Lett organisk kognitiv lidelse uten tilleggssymptomer</includedValues>
+            <includedValues>ARK-ICD::F0671::Lett organisk kognitiv lidelse med vrangforestillinger</includedValues>
+            <includedValues>ARK-ICD::F0672::Lett organisk kognitiv lidelse med hallusinasjoner</includedValues>
+            <includedValues>ARK-ICD::F0673::Lett organisk kognitiv lidelse med depressive symptomer</includedValues>
+            <includedValues>ARK-ICD::F0674::Lett organisk kognitiv lidelse med andre blandede symptomer</includedValues>
+            <includedValues>ARK-ICD::F068::Andre spesifiserte organiske psykiske lidelser</includedValues>
+            <includedValues>ARK-ICD::F0680::Andre organiske psykiske lidelser uten tilleggssymptomer</includedValues>
+            <includedValues>ARK-ICD::F0681::Andre organiske psykiske lidelser med vrangforestillinger</includedValues>
+            <includedValues>ARK-ICD::F0682::Andre organiske psykiske lidelser med hallusinasjoner</includedValues>
+            <includedValues>ARK-ICD::F0683::Andre organiske psykiske lidelser med depressive symptomer</includedValues>
+            <includedValues>ARK-ICD::F0684::Andre organiske psykiske lidelser med blandede symptomer</includedValues>
+            <includedValues>ARK-ICD::F069::Uspesifisert organisk psykisk lidelse</includedValues>
+            <includedValues>ARK-ICD::F0690::Uspesifisert organisk psykisk lidelse uten tilleggssymptomer</includedValues>
+            <includedValues>ARK-ICD::F0691::Uspesifisert organisk psykisk lidelse med vrangforestill</includedValues>
+            <includedValues>ARK-ICD::F0692::Uspesifisert organisk psykisk lidelse med hallusinasjoner</includedValues>
+            <includedValues>ARK-ICD::F0693::Uspesifisert organisk psykisk lidelse med depressive symptom</includedValues>
+            <includedValues>ARK-ICD::F0694::Uspesifisert organisk psykisk lidelse med blandede symptomer</includedValues>
+            <includedValues>ARK-ICD::F070::Organisk personlighetsforstyrrelse</includedValues>
+            <includedValues>ARK-ICD::F0700::Organisk personlighetsforstyrrelse uten tilleggssymptomer</includedValues>
+            <includedValues>ARK-ICD::F0701::Organisk personlighetsforstyrrelse med vrangforestillinger</includedValues>
+            <includedValues>ARK-ICD::F0702::Organisk personlighetsforstyrrelse med hallusinasjoner</includedValues>
+            <includedValues>ARK-ICD::F0703::Organisk personlighetsforstyrrelse med depressive symptomer</includedValues>
+            <includedValues>ARK-ICD::F0704::Organisk personlighetsforstyrrelse, andre blandede symptomer</includedValues>
+            <includedValues>ARK-ICD::F071::Postencefalittisk syndrom</includedValues>
+            <includedValues>ARK-ICD::F0710::Postencefalittisk syndrom uten tilleggssymptomer</includedValues>
+            <includedValues>ARK-ICD::F0711::Postencefalittisk syndrom med vrangforestillinger</includedValues>
+            <includedValues>ARK-ICD::F0712::Postencefalittisk syndrom med hallusinasjoner</includedValues>
+            <includedValues>ARK-ICD::F0713::Postencefalittisk syndrom med depressive symptomer</includedValues>
+            <includedValues>ARK-ICD::F0714::Postencefalittisk syndrom med andre blandede symptomer</includedValues>
+            <includedValues>ARK-ICD::F072::Posttraumatisk hjernesyndrom</includedValues>
+            <includedValues>ARK-ICD::F0720::Posttraumatisk hjernesyndrom uten tilleggssymptomer</includedValues>
+            <includedValues>ARK-ICD::F0721::Posttraumatisk hjernesyndrom med vrangforestillinger</includedValues>
+            <includedValues>ARK-ICD::F0722::Posttraumatisk hjernesyndrom med hallusinasjoner</includedValues>
+            <includedValues>ARK-ICD::F0723::Posttraumatisk hjernesyndrom med depressive symptomer</includedValues>
+            <includedValues>ARK-ICD::F0724::Posttraumatisk hjernesyndrom med andre blandede symptomer</includedValues>
+            <includedValues>ARK-ICD::F078::Andre organiske personlighets- og atferdsforstyrrelser</includedValues>
+            <includedValues>ARK-ICD::F0780::Andre organiske personlighets/atferdsforst uten tilleggssymp</includedValues>
+            <includedValues>ARK-ICD::F0781::Andre organiske personlighets/atferdsforst med vrangforestil</includedValues>
+            <includedValues>ARK-ICD::F0782::Andre organiske personlighets/atferdsforst med hallusinasjo</includedValues>
+            <includedValues>ARK-ICD::F0783::Andre organiske personlighets/atferdsforst med depress sympt</includedValues>
+            <includedValues>ARK-ICD::F0784::Andre organiske personlighets/atferdsforst med blandede symp</includedValues>
+            <includedValues>ARK-ICD::F079::Uspesifisert organisk personlighets- og atferdsforstyrrelse</includedValues>
+            <includedValues>ARK-ICD::F0790::Uspes organisk personlighets/atferdsforst uten tilleggssympt</includedValues>
+            <includedValues>ARK-ICD::F0791::Uspes organisk personlighets/atferdsforst med vrangforestill</includedValues>
+            <includedValues>ARK-ICD::F0792::Uspes organisk personlighets/atferdsforst med hallusinasjone</includedValues>
+            <includedValues>ARK-ICD::F0793::Uspes organisk personlighets/atferdsforst med depress sympt</includedValues>
+            <includedValues>ARK-ICD::F0794::Uspes organisk personlighets/atferdsforst med blandede sympt</includedValues>
+            <includedValues>ARK-ICD::F09::Uspesifisert organisk eller symptomatisk psykisk lidelse</includedValues>
+            <includedValues>ARK-ICD::F100::Akutt alkoholintoksikasjon</includedValues>
+            <includedValues>ARK-ICD::F1000::Akutt alkoholintoksikasjon, ukomplisert</includedValues>
+            <includedValues>ARK-ICD::F1001::Akutt alkoholintoksikasjon med fysisk skade</includedValues>
+            <includedValues>ARK-ICD::F1002::Akutt alkoholintoksikasjon med andre medisinske komplik</includedValues>
+            <includedValues>ARK-ICD::F1003::Akutt alkoholintoksikasjon med delirium</includedValues>
+            <includedValues>ARK-ICD::F1004::Akutt alkoholintoksikasjon med persepsjonsforstyrrelser</includedValues>
+            <includedValues>ARK-ICD::F1005::Akutt alkoholintoksikasjon med koma</includedValues>
+            <includedValues>ARK-ICD::F1006::Akutt alkoholintoksikasjon med kramper</includedValues>
+            <includedValues>ARK-ICD::F1007::Patologisk rus</includedValues>
+            <includedValues>ARK-ICD::F101::Skadelig bruk av alkohol</includedValues>
+            <includedValues>ARK-ICD::F102::Alkoholavhengighetssyndrom</includedValues>
+            <includedValues>ARK-ICD::F1020::Alkoholavhengighetssyndrom, for tiden abstinent</includedValues>
+            <includedValues>ARK-ICD::F1021::Alkoholavhengighetssyndrom, nå abstinent i beskyttet miljø</includedValues>
+            <includedValues>ARK-ICD::F1022::Alkoholavhengighetssyndrom under vedlikeholdsbehandling</includedValues>
+            <includedValues>ARK-ICD::F1023::Alkoholavhengighet, abstinent med aversiv/blokkerende medik</includedValues>
+            <includedValues>ARK-ICD::F1024::Alkoholavhengighetssyndrom, for tiden aktiv avhengighet</includedValues>
+            <includedValues>ARK-ICD::F1025::Alkoholavhengighetssyndrom, vedvarende bruk</includedValues>
+            <includedValues>ARK-ICD::F1026::Alkoholavhengighetssyndrom, episodisk bruk (dipsomani)</includedValues>
+            <includedValues>ARK-ICD::F103::Alkoholabstinenstilstand</includedValues>
+            <includedValues>ARK-ICD::F1030::Alkoholabstinenstilstand, ukomplisert</includedValues>
+            <includedValues>ARK-ICD::F1031::Alkoholabstinenstilstand, med kramper</includedValues>
+            <includedValues>ARK-ICD::F104::Alkoholabstinenstilstand med delirium</includedValues>
+            <includedValues>ARK-ICD::F1040::Alkoholabstinenstilstand med delirium uten kramper</includedValues>
+            <includedValues>ARK-ICD::F1041::Alkoholabstinenstilstand med delirium og kramper</includedValues>
+            <includedValues>ARK-ICD::F105::Psykotisk lidelse som skyldes bruk av alkohol</includedValues>
+            <includedValues>ARK-ICD::F1050::Schizofreniform psykose som skyldes bruk av alkohol</includedValues>
+            <includedValues>ARK-ICD::F1051::Alkoholbetinget psykose med vrangforestillinger</includedValues>
+            <includedValues>ARK-ICD::F1052::Alkoholbetinget psykose med hallusinasjoner</includedValues>
+            <includedValues>ARK-ICD::F1053::I hovedsak polymorf alkoholbetinget psykose</includedValues>
+            <includedValues>ARK-ICD::F1054::Alkoholbetinget psykose med depressive symptomer</includedValues>
+            <includedValues>ARK-ICD::F1055::Alkoholbetinget psykose med maniske symptomer</includedValues>
+            <includedValues>ARK-ICD::F1056::Blandet psykotisk lidelse som skyldes bruk av alkohol</includedValues>
+            <includedValues>ARK-ICD::F106::Amnestisk syndrom som skyldes bruk av alkohol</includedValues>
+            <includedValues>ARK-ICD::F107::Alkoholbetinget residualtilstand eller sent oppstått psykose</includedValues>
+            <includedValues>ARK-ICD::F1070::Flashbacks som skyldes bruk av alkohol</includedValues>
+            <includedValues>ARK-ICD::F1071::Alkoholbetinget personlighets- eller atferdsforstyrrelse</includedValues>
+            <includedValues>ARK-ICD::F1072::Residual affektiv lidelse som skyldes bruk av alkohol</includedValues>
+            <includedValues>ARK-ICD::F1073::Demens som skyldes bruk av alkohol</includedValues>
+            <includedValues>ARK-ICD::F1074::Annen alkoholbetinget vedvarende kognitiv forstyrrelse</includedValues>
+            <includedValues>ARK-ICD::F1075::Sent innsettende alkoholbetinget psykotisk lidelse</includedValues>
+            <includedValues>ARK-ICD::F108::Andre alkoholbetingete psykiske lidelser/atferdsforstyrrels</includedValues>
+            <includedValues>ARK-ICD::F109::Uspesifisert alkoholbetinget psykisk lidelse/atferdsforstyrr</includedValues>
+            <includedValues>ARK-ICD::F110::Akutt opiatintoksikasjon</includedValues>
+            <includedValues>ARK-ICD::F1100::Akutt opiatintoksikasjon, ukomplisert</includedValues>
+            <includedValues>ARK-ICD::F1101::Akutt opiatintoksikasjon med traume eller annen fysisk skade</includedValues>
+            <includedValues>ARK-ICD::F1102::Akutt opiatintoksikasjon med andre medisinske komplikasjoner</includedValues>
+            <includedValues>ARK-ICD::F1103::Akutt opiatintoksikasjon med delirium</includedValues>
+            <includedValues>ARK-ICD::F1104::Akutt opiatintoksikasjon med persepsjonsforstyrrelser</includedValues>
+            <includedValues>ARK-ICD::F1105::Akutt opiatintoksikasjon med koma</includedValues>
+            <includedValues>ARK-ICD::F1106::Akutt opiatintoksikasjon med kramper</includedValues>
+            <includedValues>ARK-ICD::F111::Skadelig bruk av opiater</includedValues>
+            <includedValues>ARK-ICD::F112::Opiatavhengighetssyndrom</includedValues>
+            <includedValues>ARK-ICD::F1120::Opiatavhengighetssyndrom, for tiden abstinent</includedValues>
+            <includedValues>ARK-ICD::F1121::Opiatavhengighetssyndrom, nå abstinent i beskyttet miljø</includedValues>
+            <includedValues>ARK-ICD::F1122::Opiatavhengighetssyndrom under vedlikeholdsbehandling</includedValues>
+            <includedValues>ARK-ICD::F1123::Opiatavhengighet, abstinent med aversiv/blokkerende medikasj</includedValues>
+            <includedValues>ARK-ICD::F1124::Opiatavhengighetssyndrom, for tiden aktiv avhengighet</includedValues>
+            <includedValues>ARK-ICD::F1125::Opiatavhengighetssyndrom, vedvarende bruk</includedValues>
+            <includedValues>ARK-ICD::F1126::Opiatavhengighetssyndrom, episodisk bruk</includedValues>
+            <includedValues>ARK-ICD::F113::Opiatabstinenstilstand</includedValues>
+            <includedValues>ARK-ICD::F1130::Opiatabstinenstilstand, ukomplisert</includedValues>
+            <includedValues>ARK-ICD::F1131::Opiatabstinenstilstand med kramper</includedValues>
+            <includedValues>ARK-ICD::F114::Opiatabstinenstilstand med delirium</includedValues>
+            <includedValues>ARK-ICD::F1140::Opiatabstinenstilstand med delirium uten kramper</includedValues>
+            <includedValues>ARK-ICD::F1141::Opiatabstinenstilstand med delirium med kramper</includedValues>
+            <includedValues>ARK-ICD::F115::Psykotisk lidelse som skyldes bruk av opiater</includedValues>
+            <includedValues>ARK-ICD::F1150::Schizofreniform psykose som skyldes bruk av opiater</includedValues>
+            <includedValues>ARK-ICD::F1151::Opiatbetinget psykose, i hovedsak med vrangforestillinger</includedValues>
+            <includedValues>ARK-ICD::F1152::Opiatbetinget psykose, i hovedsak med hallusinasjoner</includedValues>
+            <includedValues>ARK-ICD::F1153::I hovedsak polymorf opiatbetinget psykose</includedValues>
+            <includedValues>ARK-ICD::F1154::Opiatbetinget psykose, i hovedsak med depressive symptomer</includedValues>
+            <includedValues>ARK-ICD::F1155::Opiatbetinget psykose, i hovedsak med maniske symptomer</includedValues>
+            <includedValues>ARK-ICD::F1156::Blandet psykotisk lidelse som skyldes bruk av opiater</includedValues>
+            <includedValues>ARK-ICD::F116::Amnestisk syndrom som skyldes bruk av opiater</includedValues>
+            <includedValues>ARK-ICD::F117::Opiatbetinget residualtilstand/sent innsettende psykose</includedValues>
+            <includedValues>ARK-ICD::F1170::Flashbacks som skyldes bruk av opiater</includedValues>
+            <includedValues>ARK-ICD::F1171::Opiatbetinget personlighets- eller atferdsforstyrrelse</includedValues>
+            <includedValues>ARK-ICD::F1172::Residual affektiv lidelse som skyldes bruk av opiater</includedValues>
+            <includedValues>ARK-ICD::F1173::Demens som skyldes bruk av opiater</includedValues>
+            <includedValues>ARK-ICD::F1174::Annen opiatbetinget vedvarende kognitiv forstyrrelse</includedValues>
+            <includedValues>ARK-ICD::F1175::Sent innsettende opiatbetinget psykotisk lidelse</includedValues>
+            <includedValues>ARK-ICD::F118::Andre opiatbetingete psykiske lidelser/atferdsforstyrrelser</includedValues>
+            <includedValues>ARK-ICD::F119::Uspesifisert opiatbetinget psykisk lidelse/atferdsforstyrr</includedValues>
+            <includedValues>ARK-ICD::F120::Akutt cannabinoidintoksikasjon</includedValues>
+            <includedValues>ARK-ICD::F1200::Akutt cannabinoidintoksikasjon, ukomplisert</includedValues>
+            <includedValues>ARK-ICD::F1201::Akutt cannabinoidintoksikasjon med fysisk skade</includedValues>
+            <includedValues>ARK-ICD::F1202::Akutt cannabinoidintoksikasjon med andre medisinske komplik</includedValues>
+            <includedValues>ARK-ICD::F1203::Akutt cannabinoidintoksikasjon med delirium</includedValues>
+            <includedValues>ARK-ICD::F1204::Akutt cannabinoidintoksikasjon med persepsjonsforstyrrelser</includedValues>
+            <includedValues>ARK-ICD::F1205::Akutt cannabinoidintoksikasjon med koma</includedValues>
+            <includedValues>ARK-ICD::F1206::Akutt cannabinoidintoksikasjon med kramper</includedValues>
+            <includedValues>ARK-ICD::F121::Skadelig bruk av cannabinoider</includedValues>
+            <includedValues>ARK-ICD::F122::Cannabinoidavhengighetssyndrom</includedValues>
+            <includedValues>ARK-ICD::F1220::Cannabinoidavhengighetssyndrom, for tiden abstinent</includedValues>
+            <includedValues>ARK-ICD::F1221::Cannabinoidavhengighetssyndr, nå abstinent i beskyttet miljø</includedValues>
+            <includedValues>ARK-ICD::F1222::Cannabinoidavhengighetssyndrom under vedlikeholdsbehandling</includedValues>
+            <includedValues>ARK-ICD::F1223::Cannabinoidavhengig, abstinent med aversiv/blokkerende medik</includedValues>
+            <includedValues>ARK-ICD::F1224::Cannabinoidavhengighetssyndrom, for tiden aktiv avhengighet</includedValues>
+            <includedValues>ARK-ICD::F1225::Cannabinoidavhengighetssyndrom, vedvarende bruk</includedValues>
+            <includedValues>ARK-ICD::F1226::Cannabinoidavhengighetssyndrom, episodisk bruk</includedValues>
+            <includedValues>ARK-ICD::F123::Cannabinoidabstinenstilstand</includedValues>
+            <includedValues>ARK-ICD::F1230::Cannabinoidabstinenstilstand, ukomplisert</includedValues>
+            <includedValues>ARK-ICD::F1231::Cannabinoidabstinenstilstand med kramper</includedValues>
+            <includedValues>ARK-ICD::F124::Cannabinoidabstinenstilstand med delirium</includedValues>
+            <includedValues>ARK-ICD::F1240::Cannabinoidabstinenstilstand med delirium uten kramper</includedValues>
+            <includedValues>ARK-ICD::F1241::Cannabinoidabstinenstilstand med delirium og kramper</includedValues>
+            <includedValues>ARK-ICD::F125::Psykotisk lidelse som skyldes bruk av cannabinoider</includedValues>
+            <includedValues>ARK-ICD::F1250::Schizofreniform psykose som skyldes bruk av cannabinoider</includedValues>
+            <includedValues>ARK-ICD::F1251::Cannabinoidbetinget psykose, i hovedsak vrangforestillinger</includedValues>
+            <includedValues>ARK-ICD::F1252::Cannabinoidbetinget psykose, i hovedsak hallusinasjoner</includedValues>
+            <includedValues>ARK-ICD::F1253::I hovedsak polymorf cannabinoidbetinget psykotisk lidelse</includedValues>
+            <includedValues>ARK-ICD::F1254::Cannabinoidbetinget psykose, i hovedsak depressive symptomer</includedValues>
+            <includedValues>ARK-ICD::F1255::Cannabinoidbetinget psykose, i hovedsak maniske symptomer</includedValues>
+            <includedValues>ARK-ICD::F1256::Blandet psykotisk lidelse som skyldes bruk av cannabinoider</includedValues>
+            <includedValues>ARK-ICD::F126::Amnestisk syndrom som skyldes bruk av cannabinoider</includedValues>
+            <includedValues>ARK-ICD::F127::Cannabinoidbetinget residualtilst/sent innsettende psykose</includedValues>
+            <includedValues>ARK-ICD::F1270::Flashbacks  som skyldes bruk av cannabinoider</includedValues>
+            <includedValues>ARK-ICD::F1271::Cannabinoidbetinget personlighets- eller atferdsforstyrrelse</includedValues>
+            <includedValues>ARK-ICD::F1272::Residual affektiv lidelse som skyldes bruk av cannabinoider</includedValues>
+            <includedValues>ARK-ICD::F1273::Demens som skyldes bruk av cannabinoider</includedValues>
+            <includedValues>ARK-ICD::F1274::Annen cannabinoidbetinget vedvarende kognitiv forstyrrelse</includedValues>
+            <includedValues>ARK-ICD::F1275::Sent innsettende cannabinoidbetinget psykotisk lidelse</includedValues>
+            <includedValues>ARK-ICD::F128::Andre cannabinoidbetingete psykiske lidelser/atferdsforstyrr</includedValues>
+            <includedValues>ARK-ICD::F129::Uspesif cannabinoidbetinget psykisk lidelse/atferdsforstyrr</includedValues>
+            <includedValues>ARK-ICD::F130::Akutt intoksikasjon med sedativa og hypnotika</includedValues>
+            <includedValues>ARK-ICD::F1300::Akutt intoksikasjon med sedativa og hypnotika, ukomplisert</includedValues>
+            <includedValues>ARK-ICD::F1301::Akutt intoksikasjon med sedativa/hypnotika med fysisk skade</includedValues>
+            <includedValues>ARK-ICD::F1302::Akutt intoks, sedativa/hypnotika, andre medisinske komplik</includedValues>
+            <includedValues>ARK-ICD::F1303::Akutt intoksikasjon med sedativa og hypnotika med delirium</includedValues>
+            <includedValues>ARK-ICD::F1304::Akutt intoks med sedativa/hypnotika med persepsjonsforstyrr</includedValues>
+            <includedValues>ARK-ICD::F1305::Akutt intoksikasjon med sedativa og hypnotika med koma</includedValues>
+            <includedValues>ARK-ICD::F1306::Akutt intoksikasjon med sedativa og hypnotika med kramper</includedValues>
+            <includedValues>ARK-ICD::F131::Skadelig bruk av sedativa og hypnotika</includedValues>
+            <includedValues>ARK-ICD::F132::Avhengighetssyndrom som skyldes sedativa og hypnotika</includedValues>
+            <includedValues>ARK-ICD::F1320::Avhengighetssyndrom sedativa/hypnotika, for tiden abstinent</includedValues>
+            <includedValues>ARK-ICD::F1321::Avhengighet sedativa/hypnotika, abstinent i beskyttet miljø</includedValues>
+            <includedValues>ARK-ICD::F1322::Avhengighetssyndrom sedativa/hypnotika, vedlikeholdsbehandl</includedValues>
+            <includedValues>ARK-ICD::F1323::Avhengighet sedativa/hypnotika, abstinent, avers/blokk medik</includedValues>
+            <includedValues>ARK-ICD::F1324::Avhengighetssyndrom, sedativa/hypnotika, aktiv avhengighet</includedValues>
+            <includedValues>ARK-ICD::F1325::Avhengighetssyndrom, sedativa og hypnotika, vedvarende bruk</includedValues>
+            <includedValues>ARK-ICD::F1326::Avhengighetssyndrom, sedativa og hypnotika, episodisk bruk</includedValues>
+            <includedValues>ARK-ICD::F133::Abstinenstilstand som skyldes sedativa og hypnotika</includedValues>
+            <includedValues>ARK-ICD::F1330::Abstinenstilstand, sedativa og hypnotika, ukomplisert</includedValues>
+            <includedValues>ARK-ICD::F1331::Abstinenstilstand, sedativa og hypnotika med kramper</includedValues>
+            <includedValues>ARK-ICD::F134::Abstinenstilstand, sedativa og hypnotika med delirium</includedValues>
+            <includedValues>ARK-ICD::F1340::Abstinenstilstand, sedativa/hypnotika, delirium uten kramper</includedValues>
+            <includedValues>ARK-ICD::F1341::Abstinenstilstand, sedativa/hypnotika, delirium og kramper</includedValues>
+            <includedValues>ARK-ICD::F135::Psykotisk lidelse som skyldes bruk av sedativa og hypnotika</includedValues>
+            <includedValues>ARK-ICD::F1350::Schizofreniform psykose som skyldes sedativa og hypnotika</includedValues>
+            <includedValues>ARK-ICD::F1351::Psykose pga sedativa og hypnotika, med vrangforestillinger</includedValues>
+            <includedValues>ARK-ICD::F1352::Psykose pga sedativa og hypnotika, med hallusinasjoner</includedValues>
+            <includedValues>ARK-ICD::F1353::I hovedsak polymorf psykose pga sedativa og hypnotika</includedValues>
+            <includedValues>ARK-ICD::F1354::Psykose pga sedativa/hypnotika, mest depressive symptomer</includedValues>
+            <includedValues>ARK-ICD::F1355::Psykose pga sedativa/hypnotika, mest maniske symptomer</includedValues>
+            <includedValues>ARK-ICD::F1356::Blandet psykotisk lidelse som skyldes sedativa og hypnotika</includedValues>
+            <includedValues>ARK-ICD::F136::Amnestisk syndrom som skyldes bruk av sedativa og hypnotika</includedValues>
+            <includedValues>ARK-ICD::F137::Residualtilstand/sent innsett psykose pga sedativa/hypnotika</includedValues>
+            <includedValues>ARK-ICD::F1370::Flashbacks som skyldes bruk av sedativa og hypnotika</includedValues>
+            <includedValues>ARK-ICD::F1371::Personlighets/atferdsforstyrrelse pga sedativa/hypnotik</includedValues>
+            <includedValues>ARK-ICD::F1372::Residual affektiv lidelse pga bruk av sedativa og hypnotika</includedValues>
+            <includedValues>ARK-ICD::F1373::Demens som skyldes bruk av sedativa og hypnotika</includedValues>
+            <includedValues>ARK-ICD::F1374::Annen vedvarende kognitiv forstyrr pga sedativa/hypnotika</includedValues>
+            <includedValues>ARK-ICD::F1375::Sent innsettende psykotisk lidelse pga sedativa og hypnotika</includedValues>
+            <includedValues>ARK-ICD::F138::Andre psykiske lid/atferdsforstyrr pga sedativa/hypnotika</includedValues>
+            <includedValues>ARK-ICD::F139::Uspesif psykisk lid/atferdsforstyrr pga sedativa/hypnotika</includedValues>
+            <includedValues>ARK-ICD::F140::Akutt kokainintoksikasjon</includedValues>
+            <includedValues>ARK-ICD::F1400::Akutt kokainintoksikasjon, ukomplisert</includedValues>
+            <includedValues>ARK-ICD::F1401::Akutt kokainintoksikasjon med fysisk skade</includedValues>
+            <includedValues>ARK-ICD::F1402::Akutt kokainintoksikasjon med andre medisinske komplikasj</includedValues>
+            <includedValues>ARK-ICD::F1403::Akutt kokainintoksikasjon med delirium</includedValues>
+            <includedValues>ARK-ICD::F1404::Akutt kokainintoksikasjon med persepsjonsforstyrrelser</includedValues>
+            <includedValues>ARK-ICD::F1405::Akutt kokainintoksikasjon med koma</includedValues>
+            <includedValues>ARK-ICD::F1406::Akutt kokainintoksikasjon med kramper</includedValues>
+            <includedValues>ARK-ICD::F141::Skadelig bruk av kokain</includedValues>
+            <includedValues>ARK-ICD::F142::Kokainavhengighetssyndrom</includedValues>
+            <includedValues>ARK-ICD::F1420::Kokainavhengighetssyndrom, for tiden abstinent</includedValues>
+            <includedValues>ARK-ICD::F1421::Kokainavhengighetssyndrom, nå abstinent i beskyttet miljø</includedValues>
+            <includedValues>ARK-ICD::F1422::Kokainavhengighetssyndrom under vedlikeholdsbehandling</includedValues>
+            <includedValues>ARK-ICD::F1423::Kokainavhengighet, abstinent med aversiv/blokker medikasjon</includedValues>
+            <includedValues>ARK-ICD::F1424::Kokainavhengighetssyndrom, for tiden aktiv avhengighet</includedValues>
+            <includedValues>ARK-ICD::F1425::Kokainavhengighetssyndrom, vedvarende bruk</includedValues>
+            <includedValues>ARK-ICD::F1426::Kokainavhengighetssyndrom, episodisk bruk</includedValues>
+            <includedValues>ARK-ICD::F143::Kokainabstinenstilstand</includedValues>
+            <includedValues>ARK-ICD::F1430::Kokainabstinenstilstand, ukomplisert</includedValues>
+            <includedValues>ARK-ICD::F1431::Kokainabstinenstilstand med kramper</includedValues>
+            <includedValues>ARK-ICD::F144::Kokainabstinenstilstand med delirium</includedValues>
+            <includedValues>ARK-ICD::F1440::Kokainabstinenstilstand med delirium uten kramper</includedValues>
+            <includedValues>ARK-ICD::F1441::Kokainabstinenstilstand med delirium og kramper</includedValues>
+            <includedValues>ARK-ICD::F145::Psykotisk lidelse som skyldes bruk av kokain</includedValues>
+            <includedValues>ARK-ICD::F1450::Schizofreniform psykose som skyldes bruk av kokain</includedValues>
+            <includedValues>ARK-ICD::F1451::Psykose som skyldes bruk av kokain, mest vrangforestillinger</includedValues>
+            <includedValues>ARK-ICD::F1452::Psykose som skyldes bruk av kokain, mest hallusinasjoner</includedValues>
+            <includedValues>ARK-ICD::F1453::I hovedsak polymorf psykose som skyldes bruk av kokain</includedValues>
+            <includedValues>ARK-ICD::F1454::Psykose som skyldes bruk av kokain, mest depressive symptom</includedValues>
+            <includedValues>ARK-ICD::F1455::Psykose som skyldes bruk av kokain, mest maniske symptomer</includedValues>
+            <includedValues>ARK-ICD::F1456::Blandet psykotisk lidelse som skyldes bruk av kokain</includedValues>
+            <includedValues>ARK-ICD::F146::Amnestisk syndrom som skyldes bruk av kokain</includedValues>
+            <includedValues>ARK-ICD::F147::Residualtilstand/sent innsettende psykose pga bruk av kokain</includedValues>
+            <includedValues>ARK-ICD::F1470::Flashbacks som skyldes bruk av kokain</includedValues>
+            <includedValues>ARK-ICD::F1471::Personlighets- eller atferdsforstyrrelse pga bruk av kokain</includedValues>
+            <includedValues>ARK-ICD::F1472::Residual affektiv lidelse som skyldes bruk av kokain</includedValues>
+            <includedValues>ARK-ICD::F1473::Demens som skyldes bruk av kokain</includedValues>
+            <includedValues>ARK-ICD::F1474::Annen vedvarende kognitiv forstyrrelse pga bruk av kokain</includedValues>
+            <includedValues>ARK-ICD::F1475::Sent innsettende psykotisk lidelse pga bruk av kokain</includedValues>
+            <includedValues>ARK-ICD::F148::Andre psykiske lidelser/atferdsforstyrrelser pga kokainbruk</includedValues>
+            <includedValues>ARK-ICD::F149::Uspesif psykisk lidelse/atferdsforstyrrelse pga kokainbruk</includedValues>
+            <includedValues>ARK-ICD::F150::Akutt intoksikasjon andre stimulanter, inklusive kaffein</includedValues>
+            <includedValues>ARK-ICD::F1500::Akutt intoksikasjon andre stimulanter, ukomplisert</includedValues>
+            <includedValues>ARK-ICD::F1501::Akutt intoksikasjon andre stimulanter, med fysisk skade</includedValues>
+            <includedValues>ARK-ICD::F1502::Akutt intoks, andre stimulanter, andre medisinske komplik</includedValues>
+            <includedValues>ARK-ICD::F1503::Akutt intoksikasjon med andre stimulanter, med delirium</includedValues>
+            <includedValues>ARK-ICD::F1504::Akutt intoksikasjon, andre stimulanter, persepsjonsforstyrr</includedValues>
+            <includedValues>ARK-ICD::F1505::Akutt intoksikasjon med andre stimulanter, med koma</includedValues>
+            <includedValues>ARK-ICD::F1506::Akutt intoksikasjon med andre stimulanter, med kramper</includedValues>
+            <includedValues>ARK-ICD::F151::Skadelig bruk av andre stimulanter, inklusive kaffein</includedValues>
+            <includedValues>ARK-ICD::F152::Avhengighetssyndrom som skyldes bruk av andre stimulanter</includedValues>
+            <includedValues>ARK-ICD::F1520::Avhengighetssyndrom, andre stimulanter, for tiden abstinent</includedValues>
+            <includedValues>ARK-ICD::F1521::Avhengighet andre stimulanter, abstinent i beskyttet miljø</includedValues>
+            <includedValues>ARK-ICD::F1522::Avhengighet andre stimulanter, under vedlikeholdsbehandling</includedValues>
+            <includedValues>ARK-ICD::F1523::Avhengighet andre stimulanter, abstinent, avers/blokk medik</includedValues>
+            <includedValues>ARK-ICD::F1524::Avhengighetssyndrom, andre stimulanter, nå aktiv avhengighet</includedValues>
+            <includedValues>ARK-ICD::F1525::Avhengighetssyndrom pga andre stimulanter, vedvarende bruk</includedValues>
+            <includedValues>ARK-ICD::F1526::Avhengighetssyndrom pga andre stimulanter, episodisk bruk</includedValues>
+            <includedValues>ARK-ICD::F153::Abstinenstilstand som skyldes bruk av andre stimulanter</includedValues>
+            <includedValues>ARK-ICD::F1530::Abstinenstilstand pga andre stimulanter, ukomplisert</includedValues>
+            <includedValues>ARK-ICD::F1531::Abstinenstilstand pga andre stimulanter, med kramper</includedValues>
+            <includedValues>ARK-ICD::F154::Abstinenstilstand pga andre stimulanter, med delirium</includedValues>
+            <includedValues>ARK-ICD::F1540::Abstinens pga andre stimulanter, med delirium uten kramper</includedValues>
+            <includedValues>ARK-ICD::F1541::Abstinens pga andre stimulanter, med delirium og kramper</includedValues>
+            <includedValues>ARK-ICD::F155::Psykotisk lidelse som skyldes bruk av andre stimulanter</includedValues>
+            <includedValues>ARK-ICD::F1550::Schizofreni-lignende psykose som skyldes andre stimulanter</includedValues>
+            <includedValues>ARK-ICD::F1551::Psykose pga andre stimulanter, i hovedsak vrangforestillinger</includedValues>
+            <includedValues>ARK-ICD::F1552::Psykose pga andre stimulanter, i hovedsak hallusinasjoner</includedValues>
+            <includedValues>ARK-ICD::F1553::I hovedsak polymorf psykotisk lidelse pga andre stimulanter</includedValues>
+            <includedValues>ARK-ICD::F1554::Psykose pga andre stimulanter, mest depressive symptomer</includedValues>
+            <includedValues>ARK-ICD::F1555::Psykose pga andre stimulanter, i hovedsak maniske symptomer</includedValues>
+            <includedValues>ARK-ICD::F1556::Blandet psykose som skyldes bruk av andre stimulanter</includedValues>
+            <includedValues>ARK-ICD::F156::Amnestisk syndrom som skyldes bruk av andre stimulanter</includedValues>
+            <includedValues>ARK-ICD::F157::Residualtilst/sent innsettende psykose pga andre stimulanter</includedValues>
+            <includedValues>ARK-ICD::F1570::Flashbacks som skyldes bruk av andre stimulanter</includedValues>
+            <includedValues>ARK-ICD::F1571::Personlighets/atferdsforstyrrelse pga andre stimulanter</includedValues>
+            <includedValues>ARK-ICD::F1572::Residual affektiv lidelse pga bruk av andre stimulanter</includedValues>
+            <includedValues>ARK-ICD::F1573::Demens som skyldes bruk av andre stimulanter</includedValues>
+            <includedValues>ARK-ICD::F1574::Annen vedvarende kognitiv forstyrrelse pga andre stimulanter</includedValues>
+            <includedValues>ARK-ICD::F1575::Sent innsettende psykotisk lidelse pga andre stimulanter</includedValues>
+            <includedValues>ARK-ICD::F158::Andre psykiske lid/atferdsforstyrr pga andre stimulanter</includedValues>
+            <includedValues>ARK-ICD::F159::Uspes psykisk lidelse/atferdsforstyrr pga andre stimulanter</includedValues>
+            <includedValues>ARK-ICD::F160::Akutt hallusinogenintoksikasjon</includedValues>
+            <includedValues>ARK-ICD::F1600::Akutt hallusinogenintoksikasjon, ukomplisert</includedValues>
+            <includedValues>ARK-ICD::F1601::Akutt hallusinogenintoksikasjon med fysisk skade</includedValues>
+            <includedValues>ARK-ICD::F1602::Akutt hallusinogenintoksikasjon med andre medisinske komplik</includedValues>
+            <includedValues>ARK-ICD::F1603::Akutt hallusinogenintoksikasjon med delirium</includedValues>
+            <includedValues>ARK-ICD::F1604::Akutt hallusinogenintoksikasjon med persepsjonsforstyrrelser</includedValues>
+            <includedValues>ARK-ICD::F1605::Akutt hallusinogenintoksikasjon med koma</includedValues>
+            <includedValues>ARK-ICD::F1606::Akutt hallusinogenintoksikasjon med kramper</includedValues>
+            <includedValues>ARK-ICD::F161::Skadelig bruk av hallusinogener</includedValues>
+            <includedValues>ARK-ICD::F162::Hallusinogenavhengighetssyndrom</includedValues>
+            <includedValues>ARK-ICD::F1620::Hallusinogenavhengighetssyndrom, for tiden abstinent</includedValues>
+            <includedValues>ARK-ICD::F1621::Hallusinogenavhengighetssyndr, abstinent i beskyttet miljø</includedValues>
+            <includedValues>ARK-ICD::F1622::Hallusinogenavhengighetssyndrom under vedlikeholdsbehandling</includedValues>
+            <includedValues>ARK-ICD::F1623::Hallusinogenavhengighet, abstinent med avers/blokk medikasj</includedValues>
+            <includedValues>ARK-ICD::F1624::Hallusinogenavhengighetssyndrom, for tiden aktiv avhengighet</includedValues>
+            <includedValues>ARK-ICD::F1625::Hallusinogenavhengighetssyndrom, vedvarende bruk</includedValues>
+            <includedValues>ARK-ICD::F1626::Hallusinogenavhengighetssyndrom, episodisk bruk</includedValues>
+            <includedValues>ARK-ICD::F163::Hallusinogenabstinenstilstand</includedValues>
+            <includedValues>ARK-ICD::F1630::Hallusinogenabstinenstilstand, ukomplisert</includedValues>
+            <includedValues>ARK-ICD::F1631::Hallusinogenabstinenstilstand med kramper</includedValues>
+            <includedValues>ARK-ICD::F164::Hallusinogenabstinenstilstand med delirium</includedValues>
+            <includedValues>ARK-ICD::F1640::Hallusinogenabstinenstilstand med delirium uten kramper</includedValues>
+            <includedValues>ARK-ICD::F1641::Hallusinogenabstinenstilstand med delirium og kramper</includedValues>
+            <includedValues>ARK-ICD::F165::Psykotisk lidelse som skyldes bruk av hallusinogener</includedValues>
+            <includedValues>ARK-ICD::F1650::Schizofreniform psykose som skyldes bruk av hallusinogener</includedValues>
+            <includedValues>ARK-ICD::F1651::Psykose pga hallusinogenbruk, i hovedsak vrangforestillinger</includedValues>
+            <includedValues>ARK-ICD::F1652::Psykose pga hallusinogenbruk, i hovedsak hallusinasjoner</includedValues>
+            <includedValues>ARK-ICD::F1653::I hovedsak polymorf psykotisk lidelse pga hallusinogenbruk</includedValues>
+            <includedValues>ARK-ICD::F1654::Psykose som skyldes hallusinogenbruk, mest depressive sympt</includedValues>
+            <includedValues>ARK-ICD::F1655::Psykose som skyldes hallusinogenbruk, mest maniske symptomer</includedValues>
+            <includedValues>ARK-ICD::F1656::Blandet psykotisk lidelse som skyldes bruk av hallusinogener</includedValues>
+            <includedValues>ARK-ICD::F166::Amnestisk syndrom som skyldes bruk av hallusinogener</includedValues>
+            <includedValues>ARK-ICD::F167::Residualtilstand/sent innsettende psykose pga hallusinogener</includedValues>
+            <includedValues>ARK-ICD::F1670::Flashbacks som skyldes bruk av hallusinogener</includedValues>
+            <includedValues>ARK-ICD::F1671::Personlighets/atferdsforstyrrelse pga hallusinogenbruk</includedValues>
+            <includedValues>ARK-ICD::F1672::Residual affektiv lidelse som skyldes bruk av hallusinogener</includedValues>
+            <includedValues>ARK-ICD::F1673::Demens som skyldes bruk av hallusinogener</includedValues>
+            <includedValues>ARK-ICD::F1674::Annen vedvarende kognitiv forstyrrelse pga hallusinogenbruk</includedValues>
+            <includedValues>ARK-ICD::F1675::Sent innsettende psykotisk lidelse pga hallusinogenbruk</includedValues>
+            <includedValues>ARK-ICD::F168::Andre psykiske lidelser/atferdsforstyrr pga hallusinogenbruk</includedValues>
+            <includedValues>ARK-ICD::F169::Uspesif psykisk lidelse/atferdsforstyrr pga hallusinogenbruk</includedValues>
+            <includedValues>ARK-ICD::F170::Akutt tobakksintoksikasjon</includedValues>
+            <includedValues>ARK-ICD::F1700::Akutt tobakksintoksikasjon, ukomplisert</includedValues>
+            <includedValues>ARK-ICD::F1701::Akutt tobakksintoksikasjon med fysisk skade</includedValues>
+            <includedValues>ARK-ICD::F1702::Akutt tobakksintoksikasjon med andre medisinske komplikasj</includedValues>
+            <includedValues>ARK-ICD::F1703::Akutt tobakksintoksikasjon med delirium</includedValues>
+            <includedValues>ARK-ICD::F1704::Akutt tobakksintoksikasjon med persepsjonsforstyrrelser</includedValues>
+            <includedValues>ARK-ICD::F1705::Akutt tobakksintoksikasjon med koma</includedValues>
+            <includedValues>ARK-ICD::F1706::Akutt tobakksintoksikasjon med kramper</includedValues>
+            <includedValues>ARK-ICD::F171::Skadelig bruk av tobakk</includedValues>
+            <includedValues>ARK-ICD::F172::Tobakksavhengighetssyndrom</includedValues>
+            <includedValues>ARK-ICD::F1720::Tobakksavhengighetssyndrom, for tiden abstinent</includedValues>
+            <includedValues>ARK-ICD::F1721::Tobakksavhengighetssyndrom, nå abstinent i beskyttet miljø</includedValues>
+            <includedValues>ARK-ICD::F1722::Tobakksavhengighetssyndrom under vedlikeholdsbehandling</includedValues>
+            <includedValues>ARK-ICD::F1723::Tobakksavhengighetssyndrom, abstinent med avers/blokk medik</includedValues>
+            <includedValues>ARK-ICD::F1724::Tobakksavhengighetssyndrom, for tiden aktiv avhengighet</includedValues>
+            <includedValues>ARK-ICD::F1725::Tobakksavhengighetssyndrom, vedvarende bruk</includedValues>
+            <includedValues>ARK-ICD::F1726::Tobakksavhengighetssyndrom, episodisk bruk</includedValues>
+            <includedValues>ARK-ICD::F173::Tobakksabstinenstilstand</includedValues>
+            <includedValues>ARK-ICD::F1730::Tobakksabstinenstilstand, ukomplisert</includedValues>
+            <includedValues>ARK-ICD::F1731::Tobakksabstinenstilstand med kramper</includedValues>
+            <includedValues>ARK-ICD::F174::Tobakksabstinenstilstand med delirium</includedValues>
+            <includedValues>ARK-ICD::F1740::Tobakksabstinenstilstand med delirium uten kramper</includedValues>
+            <includedValues>ARK-ICD::F1741::Tobakksabstinenstilstand med delirium og kramper</includedValues>
+            <includedValues>ARK-ICD::F175::Psykotisk lidelse som skyldes bruk av tobakk</includedValues>
+            <includedValues>ARK-ICD::F1750::Schizofreniform psykose som skyldes bruk av tobakk</includedValues>
+            <includedValues>ARK-ICD::F1751::Psykotisk lidelse pga tobakksbruk, mest vrangforestillinger</includedValues>
+            <includedValues>ARK-ICD::F1752::Psykotisk lidelse pga tobakksbruk, mest vrangforestillinger</includedValues>
+            <includedValues>ARK-ICD::F1753::I hovedsak polymorf psykotisk lidelse pga bruk av tobakk</includedValues>
+            <includedValues>ARK-ICD::F1754::Psykotisk lidelse pga tobakksbruk, mest depressive symptomer</includedValues>
+            <includedValues>ARK-ICD::F1755::Psykotisk lidelse pga tobakksbruk, mest maniske symptomer</includedValues>
+            <includedValues>ARK-ICD::F1756::Blandet psykotisk lidelse som skyldes bruk av tobakk</includedValues>
+            <includedValues>ARK-ICD::F176::Amnestisk syndrom som skyldes bruk av tobakk</includedValues>
+            <includedValues>ARK-ICD::F177::Residualtilstand/sent innsettende psykose pga bruk av tobakk</includedValues>
+            <includedValues>ARK-ICD::F1770::Flashbacks som skyldes bruk av tobakk</includedValues>
+            <includedValues>ARK-ICD::F1771::Personlighets- eller atferdsforstyrrelse pga tobakksbruk</includedValues>
+            <includedValues>ARK-ICD::F1772::Residual affektiv lidelse som skyldes bruk av tobakk</includedValues>
+            <includedValues>ARK-ICD::F1773::Demens som skyldes bruk av tobakk</includedValues>
+            <includedValues>ARK-ICD::F1774::Annen vedvarende kognitiv forstyrrelse pga bruk av tobakk</includedValues>
+            <includedValues>ARK-ICD::F1775::Sent innsettende psykotisk lidelse pga bruk av tobakk</includedValues>
+            <includedValues>ARK-ICD::F178::Andre psykiske lidelser/atferdsforstyrrelser pga tobakksbruk</includedValues>
+            <includedValues>ARK-ICD::F179::Uspesif psykisk lidelse/atferdsforstyrrelse pga tobakksbruk</includedValues>
+            <includedValues>ARK-ICD::F180::Akutt intoksikasjon med flyktige løsemidler</includedValues>
+            <includedValues>ARK-ICD::F1800::Akutt intoksikasjon med flyktige løsemidler, ukomplisert</includedValues>
+            <includedValues>ARK-ICD::F1801::Akutt intoksikasjon med flyktige løsemidler med fysisk skade</includedValues>
+            <includedValues>ARK-ICD::F1802::Akutt intoks, flyktige løsemidler, andre medisinske komplik</includedValues>
+            <includedValues>ARK-ICD::F1803::Akutt intoksikasjon med flyktige løsemidler med delirium</includedValues>
+            <includedValues>ARK-ICD::F1804::Akutt intoks med flyktige løsemidler, persepsjonsforstyrr</includedValues>
+            <includedValues>ARK-ICD::F1805::Akutt intoksikasjon med flyktige løsemidler med koma</includedValues>
+            <includedValues>ARK-ICD::F1806::Akutt intoksikasjon med flyktige løsemidler med kramper</includedValues>
+            <includedValues>ARK-ICD::F181::Skadelig bruk av flyktige løsemidler</includedValues>
+            <includedValues>ARK-ICD::F182::Avhengighetssyndrom som skyldes flyktige løsemidler</includedValues>
+            <includedValues>ARK-ICD::F1820::Avhengighetssyndrom pga flyktige løsemidler, nå abstinent</includedValues>
+            <includedValues>ARK-ICD::F1821::Avhengighet, flykt løsemidler, abstinent i beskyttet miljø</includedValues>
+            <includedValues>ARK-ICD::F1822::Avhengighetssyndrom, flyktige løsemidler, vedlikeholdsbehand</includedValues>
+            <includedValues>ARK-ICD::F1823::Avhengighet, flykt løsemidler, abstinent, avers/blokk medik</includedValues>
+            <includedValues>ARK-ICD::F1824::Avhengighetssyndrom, flyktige løsemidler, aktiv avhengighet</includedValues>
+            <includedValues>ARK-ICD::F1825::Avhengighetssyndrom, flyktige løsemidler, nå vedvarende bruk</includedValues>
+            <includedValues>ARK-ICD::F1826::Avhengighetssyndrom pga flyktige løsemidler, episodisk bruk</includedValues>
+            <includedValues>ARK-ICD::F183::Abstinenstilstand som skyldes flyktige løsemidler</includedValues>
+            <includedValues>ARK-ICD::F1830::Abstinenstilstand pga flyktige løsemidler, ukomplisert</includedValues>
+            <includedValues>ARK-ICD::F1831::Abstinenstilstand pga flyktige løsemidler, med kramper</includedValues>
+            <includedValues>ARK-ICD::F184::Abstinenstilstand pga flyktige løsemidler med delirium</includedValues>
+            <includedValues>ARK-ICD::F1840::Abstinenstilst pga flyktige løsemidler, delir uten kramper</includedValues>
+            <includedValues>ARK-ICD::F1841::Abstinenstilst pga flyktige løsemidler, delirium og kramper</includedValues>
+            <includedValues>ARK-ICD::F185::Psykotisk lidelse som skyldes bruk av flyktige løsemidler</includedValues>
+            <includedValues>ARK-ICD::F1850::Schizofreniform psykose pga bruk av flyktige løsemidler</includedValues>
+            <includedValues>ARK-ICD::F1851::Psykose pga flyktige løsemidler, mest vrangforestillinger</includedValues>
+            <includedValues>ARK-ICD::F1852::Psykose pga flyktige løsemidler, mest hallusinasjoner</includedValues>
+            <includedValues>ARK-ICD::F1853::I hovedsak polymorf psykose pga bruk av flyktige løsemidler</includedValues>
+            <includedValues>ARK-ICD::F1854::Psykose pga av flyktige løsemidler, mest depressive symptom</includedValues>
+            <includedValues>ARK-ICD::F1855::Psykose pga av flyktige løsemidler, mest maniske symptomer</includedValues>
+            <includedValues>ARK-ICD::F1856::Blandet psykotisk lidelse pga bruk av flyktige løsemidler</includedValues>
+            <includedValues>ARK-ICD::F186::Amnestisk syndrom som skyldes bruk av flyktige løsemidler</includedValues>
+            <includedValues>ARK-ICD::F187::Residualtilst/sent innsett psykose pga flyktige løsemidler</includedValues>
+            <includedValues>ARK-ICD::F1870::Flashbacks som skyldes bruk av flyktige løsemidler</includedValues>
+            <includedValues>ARK-ICD::F1871::Personlighets/atferdsforstyrrelse pga flyktige løsemidler</includedValues>
+            <includedValues>ARK-ICD::F1872::Residual affektiv lidelse pga bruk av flyktige løsemidler</includedValues>
+            <includedValues>ARK-ICD::F1873::Demens som skyldes bruk av flyktige løsemidler</includedValues>
+            <includedValues>ARK-ICD::F1874::Annen vedvarende kognitiv forstyrr pga flyktige løsemidler</includedValues>
+            <includedValues>ARK-ICD::F1875::Sent innsettende psykotisk lidelse pga flyktige løsemidler</includedValues>
+            <includedValues>ARK-ICD::F188::Andre psykiske lid/atferdsforstyrr pga flyktige løsemidler</includedValues>
+            <includedValues>ARK-ICD::F189::Uspesif psykisk lid/atferdsforstyrr pga flyktige løsemidler</includedValues>
+            <includedValues>ARK-ICD::F190::Akutt intoksikasjon med flere stoffer</includedValues>
+            <includedValues>ARK-ICD::F1900::Akutt intoksikasjon med flere stoffer, ukomplisert</includedValues>
+            <includedValues>ARK-ICD::F1901::Akutt intoksikasjon med flere stoffer med fysisk skade</includedValues>
+            <includedValues>ARK-ICD::F1902::Akutt intoks, flere stoffer med andre medisinske komplikasj</includedValues>
+            <includedValues>ARK-ICD::F1903::Akutt intoksikasjon med flere stoffer med delirium</includedValues>
+            <includedValues>ARK-ICD::F1904::Akutt intoks med flere stoffer med persepsjonsforstyrrelser</includedValues>
+            <includedValues>ARK-ICD::F1905::Akutt intoksikasjon med flere stoffer med koma</includedValues>
+            <includedValues>ARK-ICD::F1906::Akutt intoksikasjon med flere stoffer med kramper</includedValues>
+            <includedValues>ARK-ICD::F191::Skadelig bruk av flere stoffer</includedValues>
+            <includedValues>ARK-ICD::F192::Avhengighetssyndrom som skyldes flere stoffer</includedValues>
+            <includedValues>ARK-ICD::F1920::Avhengighetssyndrom, flere stoffer, for tiden abstinent</includedValues>
+            <includedValues>ARK-ICD::F1921::Avhengighet, flere stoffer, abstinent i beskyttet miljø</includedValues>
+            <includedValues>ARK-ICD::F1922::Avhengighetssyndrom, flere stoffer, vedlikeholdsbehandling</includedValues>
+            <includedValues>ARK-ICD::F1923::Avhengighet, flere stoffer, abstinent, aversiv/blokker medik</includedValues>
+            <includedValues>ARK-ICD::F1924::Avhengighetssyndrom pga flere stoffer, nå aktiv avhengighet</includedValues>
+            <includedValues>ARK-ICD::F1925::Avhengighetssyndrom pga flere stoffer, vedvarende bruk</includedValues>
+            <includedValues>ARK-ICD::F1926::Avhengighetssyndrom pga flere stoffer, episodisk bruk</includedValues>
+            <includedValues>ARK-ICD::F193::Abstinenstilstand som skyldes flere stoffer</includedValues>
+            <includedValues>ARK-ICD::F1930::Abstinenstilstand som skyldes flere stoffer, ukomplisert</includedValues>
+            <includedValues>ARK-ICD::F1931::Abstinenstilstand som skyldes flere stoffer, med kramper</includedValues>
+            <includedValues>ARK-ICD::F194::Abstinenstilstand som skyldes flere stoffer med delirium</includedValues>
+            <includedValues>ARK-ICD::F1940::Abstinenstilstand pga flere stoffer med delir uten kramper</includedValues>
+            <includedValues>ARK-ICD::F1941::Abstinenstilstand pga flere stoffer med delirium og kramper</includedValues>
+            <includedValues>ARK-ICD::F195::Psykotisk lidelse som skyldes bruk av flere stoffer</includedValues>
+            <includedValues>ARK-ICD::F1950::Schizofreniform psykose som skyldes bruk av flere stoffer</includedValues>
+            <includedValues>ARK-ICD::F1951::Psykose pga bruk av flere stoffer, mest vrangforestillinger</includedValues>
+            <includedValues>ARK-ICD::F1952::Psykose pga bruk av flere stoffer, mest hallusinasjoner</includedValues>
+            <includedValues>ARK-ICD::F1953::I hovedsak polymorf psykose pga bruk av flere stoffer</includedValues>
+            <includedValues>ARK-ICD::F1954::Psykose pga bruk av flere stoffer, mest depressive symptomer</includedValues>
+            <includedValues>ARK-ICD::F1955::Psykose pga bruk av flere stoffer, mest maniske symptomer</includedValues>
+            <includedValues>ARK-ICD::F1956::Blandet psykotisk lidelse som skyldes bruk av flere stoffer</includedValues>
+            <includedValues>ARK-ICD::F196::Amnestisk syndrom som skyldes bruk av flere stoffer</includedValues>
+            <includedValues>ARK-ICD::F197::Residualtilst/sent innsettende psykose pga flere stoffer</includedValues>
+            <includedValues>ARK-ICD::F1970::Flashbacks som skyldes bruk av flere stoffer</includedValues>
+            <includedValues>ARK-ICD::F1971::Personlighets- eller atferdsforstyrrelse pga flere stoffer</includedValues>
+            <includedValues>ARK-ICD::F1972::Residual affektiv lidelse som skyldes bruk av flere stoffer</includedValues>
+            <includedValues>ARK-ICD::F1973::Demens som skyldes bruk av flere stoffer</includedValues>
+            <includedValues>ARK-ICD::F1974::Annen vedvarende kognitiv forstyrrelse pga flere stoffer</includedValues>
+            <includedValues>ARK-ICD::F1975::Sent innsettende psykotisk lidelse pga bruk av flere stoffer</includedValues>
+            <includedValues>ARK-ICD::F198::Andre psykiske lidelser/atferdsforstyrr pga flere stoffer</includedValues>
+            <includedValues>ARK-ICD::F199::Uspesif psykisk lidelse/atferdsforstyrr pga flere stoffer</includedValues>
+            <includedValues>ARK-ICD::F200::Paranoid schizofreni</includedValues>
+            <includedValues>ARK-ICD::F2000::Kronisk paranoid schizofreni</includedValues>
+            <includedValues>ARK-ICD::F2001::Episodisk paranoid schizofreni med progred funksjonssvikt</includedValues>
+            <includedValues>ARK-ICD::F2002::Episodisk paranoid schizofreni med stabil funksjonssvikt</includedValues>
+            <includedValues>ARK-ICD::F2003::Episodisk paranoid schizofreni med remisjon</includedValues>
+            <includedValues>ARK-ICD::F2004::Paranoid schizofreni med inkomplett remisjon</includedValues>
+            <includedValues>ARK-ICD::F2005::Paranoid schizofreni med komplett remisjon</includedValues>
+            <includedValues>ARK-ICD::F2008::Paranoid schizofreni med annet forløp</includedValues>
+            <includedValues>ARK-ICD::F2009::Paranoid schizofreni med usikkert forløp, observasjon &lt;1 år</includedValues>
+            <includedValues>ARK-ICD::F201::Hebefren schizofreni</includedValues>
+            <includedValues>ARK-ICD::F2010::Kronisk hebefren schizofreni</includedValues>
+            <includedValues>ARK-ICD::F2011::Episodisk hebefren, schizofreni med progred funksjonssvikt</includedValues>
+            <includedValues>ARK-ICD::F2012::Episodisk hebefren, schizofreni med stabil funksjonssvikt</includedValues>
+            <includedValues>ARK-ICD::F2013::Episodisk hebefren, schizofreni med remisjon</includedValues>
+            <includedValues>ARK-ICD::F2014::Hebefren schizofreni med inkomplett remisjon</includedValues>
+            <includedValues>ARK-ICD::F2015::Hebefren schizofreni med komplett remisjon</includedValues>
+            <includedValues>ARK-ICD::F2018::Hebefren schizofreni med annet forløp</includedValues>
+            <includedValues>ARK-ICD::F2019::Hebefren schizofreni med usikkert forløp, observasjon &lt; 1 år</includedValues>
+            <includedValues>ARK-ICD::F202::Kataton schizofreni</includedValues>
+            <includedValues>ARK-ICD::F2020::Kronisk kataton schizofreni</includedValues>
+            <includedValues>ARK-ICD::F2021::Episodisk kataton schizofreni med progred funksjonssvikt</includedValues>
+            <includedValues>ARK-ICD::F2022::Episodisk kataton schizofreni med stabil funksjonssvikt</includedValues>
+            <includedValues>ARK-ICD::F2023::Episodisk kataton schizofreni med remisjon</includedValues>
+            <includedValues>ARK-ICD::F2024::Kataton schizofreni med inkomplett remisjon</includedValues>
+            <includedValues>ARK-ICD::F2025::Kataton schizofreni med komplett remisjon</includedValues>
+            <includedValues>ARK-ICD::F2028::Kataton schizofreni med annet forløp</includedValues>
+            <includedValues>ARK-ICD::F2029::Kataton schizofreni med usikkert forløp, observasjon &lt; 1 år</includedValues>
+            <includedValues>ARK-ICD::F203::Udifferensiert schizofreni</includedValues>
+            <includedValues>ARK-ICD::F2030::Kronisk udifferensiert schizofreni</includedValues>
+            <includedValues>ARK-ICD::F2031::Episodisk udifferens schizofreni med progred funksjonssvikt</includedValues>
+            <includedValues>ARK-ICD::F2032::Episodisk udifferens schizofreni med stabil funksjonssvikt</includedValues>
+            <includedValues>ARK-ICD::F2033::Episodisk udifferensiert schizofreni med remisjon</includedValues>
+            <includedValues>ARK-ICD::F2034::Udifferensiert schizofreni med inkomplett remisjon</includedValues>
+            <includedValues>ARK-ICD::F2035::Udifferensiert schizofreni med komplett remisjon</includedValues>
+            <includedValues>ARK-ICD::F2038::Udifferensiert schizofreni med annet forløp</includedValues>
+            <includedValues>ARK-ICD::F2039::Udifferens schizofreni, usikkert forløp, observasjon &lt; 1 år</includedValues>
+            <includedValues>ARK-ICD::F204::Post-schizofren depresjon</includedValues>
+            <includedValues>ARK-ICD::F2040::Kronisk post-schizofren depresjon</includedValues>
+            <includedValues>ARK-ICD::F2041::Episodisk post-schizofren depresjon, progred funksjonssvikt</includedValues>
+            <includedValues>ARK-ICD::F2042::Episodisk post-schizofren depresjon, stabil funksjonssvikt</includedValues>
+            <includedValues>ARK-ICD::F2043::Episodisk post-schizofren depresjon med remisjon</includedValues>
+            <includedValues>ARK-ICD::F2044::Post-schizofren depresjon med inkomplett remisjon</includedValues>
+            <includedValues>ARK-ICD::F2045::Post-schizofren depresjon med komplett remisjon</includedValues>
+            <includedValues>ARK-ICD::F2048::Post-schizofren depresjon med annet forløp</includedValues>
+            <includedValues>ARK-ICD::F2049::Post-schizofren depresjonmed usikkert forløp, observ &lt; 1 år</includedValues>
+            <includedValues>ARK-ICD::F205::Residual schizofreni</includedValues>
+            <includedValues>ARK-ICD::F2050::Kronisk residual schizofreni</includedValues>
+            <includedValues>ARK-ICD::F2051::Episodisk residual schizofreni med progred funksjonssvikt</includedValues>
+            <includedValues>ARK-ICD::F2052::Episodisk residual schizofreni med stabil funksjonssvikt</includedValues>
+            <includedValues>ARK-ICD::F2053::Episodisk residual schizofreni med remisjon</includedValues>
+            <includedValues>ARK-ICD::F2054::Residual schizofreni med inkomplett remisjon</includedValues>
+            <includedValues>ARK-ICD::F2055::Residual schizofreni med komplett remisjon</includedValues>
+            <includedValues>ARK-ICD::F2058::Residual schizofreni med annet forløp</includedValues>
+            <includedValues>ARK-ICD::F2059::Residual schizofreni med usikkert forløp, observasjon &lt; 1 år</includedValues>
+            <includedValues>ARK-ICD::F206::Enkel schizofreni</includedValues>
+            <includedValues>ARK-ICD::F2060::Kronisk enkel schizofreni</includedValues>
+            <includedValues>ARK-ICD::F2061::Episodisk enkel schizofreni, progredierende funksjonssvikt</includedValues>
+            <includedValues>ARK-ICD::F2062::Episodisk enkel schizofreni med stabil funksjonssvikt</includedValues>
+            <includedValues>ARK-ICD::F2063::Episodisk enkel schizofreni med remisjon</includedValues>
+            <includedValues>ARK-ICD::F2064::Enkel schizofreni med inkomplett remisjon</includedValues>
+            <includedValues>ARK-ICD::F2065::Enkel schizofreni med komplett remisjon</includedValues>
+            <includedValues>ARK-ICD::F2068::Enkel schizofreni med annet forløp</includedValues>
+            <includedValues>ARK-ICD::F2069::Enkel schizofreni med usikkert forløp, observasjon &lt; 1 år</includedValues>
+            <includedValues>ARK-ICD::F208::Andre spesifiserte typer schizofreni</includedValues>
+            <includedValues>ARK-ICD::F2080::Andre spesifiserte typer kronisk schizofreni</includedValues>
+            <includedValues>ARK-ICD::F2081::Andre typer episodisk schizofreni med progred funksjonssvikt</includedValues>
+            <includedValues>ARK-ICD::F2082::Andre typer episodisk schizofreni med stabil funksjonssvikt</includedValues>
+            <includedValues>ARK-ICD::F2083::Andre spesifiserte typer episodisk schizofreni med remisjon</includedValues>
+            <includedValues>ARK-ICD::F2084::Andre spesifiserte typer schizofreni med inkomplett remisjon</includedValues>
+            <includedValues>ARK-ICD::F2085::Andre spesifiserte typer schizofreni med komplett remisjon</includedValues>
+            <includedValues>ARK-ICD::F2088::Andre spesifiserte typer schizofreni med annet forløp</includedValues>
+            <includedValues>ARK-ICD::F2089::Andre typer schizofreni med usikkert forløp, observ &lt; 1 år</includedValues>
+            <includedValues>ARK-ICD::F209::Uspesifisert schizofreni</includedValues>
+            <includedValues>ARK-ICD::F2090::Kronisk uspesifisert schizofreni</includedValues>
+            <includedValues>ARK-ICD::F2091::Episodisk uspesif schizofreni, progredierende funksjonssvikt</includedValues>
+            <includedValues>ARK-ICD::F2092::Episodisk uspesifisert schizofreni med stabil funksjonssvikt</includedValues>
+            <includedValues>ARK-ICD::F2093::Episodisk uspesifisert schizofreni med remisjon</includedValues>
+            <includedValues>ARK-ICD::F2094::Uspesifisert schizofreni med inkomplett remisjon</includedValues>
+            <includedValues>ARK-ICD::F2095::Uspesifisert schizofreni med komplett remisjon</includedValues>
+            <includedValues>ARK-ICD::F2098::Uspesifisert schizofreni med annet forløp</includedValues>
+            <includedValues>ARK-ICD::F2099::Uspesifisert schizofreni med usikkert forløp, observ &lt; 1 år</includedValues>
+            <includedValues>ARK-ICD::F21::Schizotyp lidelse</includedValues>
+            <includedValues>ARK-ICD::F220::Paranoid psykose (vrangforestillingslidelse)</includedValues>
+            <includedValues>ARK-ICD::F228::Andre spesifiserte paranoide psykoser</includedValues>
+            <includedValues>ARK-ICD::F229::Uspesifisert paranoid psykose</includedValues>
+            <includedValues>ARK-ICD::F230::Akutt polymorf psykose (non-schizofreniform)</includedValues>
+            <includedValues>ARK-ICD::F2300::Akutt polymorf psykose uten assosiert akutt påkjenning</includedValues>
+            <includedValues>ARK-ICD::F2301::Akutt polymorf psykose med assosiert akutt påkjenning</includedValues>
+            <includedValues>ARK-ICD::F231::Akutt polymorf schizofreniform psykose</includedValues>
+            <includedValues>ARK-ICD::F2310::Akutt polymorf schizofreniform psykose uten akutt påkjenning</includedValues>
+            <includedValues>ARK-ICD::F2311::Akutt polymorf schizofreniform psykose med akutt påkjenning</includedValues>
+            <includedValues>ARK-ICD::F232::Akutt schizofrenilignende psykose</includedValues>
+            <includedValues>ARK-ICD::F2320::Akutt schizofrenilignende psykose uten akutt påkjenning</includedValues>
+            <includedValues>ARK-ICD::F2321::Akutt schizofrenilignende psykose med akutt påkjenning</includedValues>
+            <includedValues>ARK-ICD::F233::Akutt paranoid psykose</includedValues>
+            <includedValues>ARK-ICD::F2330::Akutt paranoid psykose uten akutt påkjenning</includedValues>
+            <includedValues>ARK-ICD::F2331::Akutt paranoid psykose med akutt påkjenning</includedValues>
+            <includedValues>ARK-ICD::F238::Akutt forbigående psykose, annen type</includedValues>
+            <includedValues>ARK-ICD::F2380::Akutt forbigående psykose, annen type uten akutt påkjenning</includedValues>
+            <includedValues>ARK-ICD::F2381::Akutt forbigående psykose, annen type med akutt påkjenning</includedValues>
+            <includedValues>ARK-ICD::F239::Akutt forbigående psykose, uspesifisert</includedValues>
+            <includedValues>ARK-ICD::F2390::Akutt forbigående psykose, uspesif, uten akutt påkjenning</includedValues>
+            <includedValues>ARK-ICD::F2391::Akutt forbigående psykose, uspesif, med akutt påkjenning</includedValues>
+            <includedValues>ARK-ICD::F24::Indusert psykose (vrangforestillingslidelse)</includedValues>
+            <includedValues>ARK-ICD::F250::Schizoaffektiv lidelse, manisk type</includedValues>
+            <includedValues>ARK-ICD::F251::Schizoaffektiv lidelse, depressiv type</includedValues>
+            <includedValues>ARK-ICD::F252::Schizoaffektiv lidelse, blandet manisk-depressiv type</includedValues>
+            <includedValues>ARK-ICD::F258::Andre spesifiserte schizoaffektive lidelser</includedValues>
+            <includedValues>ARK-ICD::F259::Uspesifisert schizoaffektiv lidelse</includedValues>
+            <includedValues>ARK-ICD::F28::Andre ikke-organiske psykoser</includedValues>
+            <includedValues>ARK-ICD::F29::Uspesifisert ikke-organisk psykose</includedValues>
+            <includedValues>ARK-ICD::F300::Hypomani</includedValues>
+            <includedValues>ARK-ICD::F301::Mani uten psykotiske symptomer</includedValues>
+            <includedValues>ARK-ICD::F302::Mani med psykotiske symptomer</includedValues>
+            <includedValues>ARK-ICD::F308::Andre spesifiserte maniske episoder</includedValues>
+            <includedValues>ARK-ICD::F309::Uspesifisert manisk episode</includedValues>
+            <includedValues>ARK-ICD::F310::Bipolar affektiv lidelse, aktuell episode hypoman</includedValues>
+            <includedValues>ARK-ICD::F311::Bipolar affektiv lid, manisk episode, ikke psykotiske sympt</includedValues>
+            <includedValues>ARK-ICD::F312::Bipolar affektiv lidelse, manisk episode, psykotiske sympt</includedValues>
+            <includedValues>ARK-ICD::F313::Bipolar affektiv lid, aktuell episode mild/moderat depresjon</includedValues>
+            <includedValues>ARK-ICD::F3130::Bipolar affektiv lid, mild/moder depr epis u/ somat syndrom</includedValues>
+            <includedValues>ARK-ICD::F3131::Bipolar affektiv lid, mild/moder depr epis m/ somat syndrom</includedValues>
+            <includedValues>ARK-ICD::F314::Bipolar affektiv lid, alvorlig depr, ikke psykotisk episode</includedValues>
+            <includedValues>ARK-ICD::F315::Bipolar affektiv lid, alvorlig depressiv, psykotisk episode</includedValues>
+            <includedValues>ARK-ICD::F316::Bipolar affektiv lidelse, aktuell episode blandet</includedValues>
+            <includedValues>ARK-ICD::F317::Bipolar affektiv lidelse i remisjon</includedValues>
+            <includedValues>ARK-ICD::F318::Andre spesifiserte bipolare affektive lidelser</includedValues>
+            <includedValues>ARK-ICD::F319::Uspesifisert bipolar affektiv lidelse</includedValues>
+            <includedValues>ARK-ICD::F320::Mild depressiv episode</includedValues>
+            <includedValues>ARK-ICD::F3200::Mild depressiv episode uten somatisk syndrom</includedValues>
+            <includedValues>ARK-ICD::F3201::Mild depressiv episode med somatisk syndrom</includedValues>
+            <includedValues>ARK-ICD::F321::Moderat depressiv episode</includedValues>
+            <includedValues>ARK-ICD::F322::Alvorlig depressiv episode uten psykotiske symptomer</includedValues>
+            <includedValues>ARK-ICD::F323::Alvorlig depressiv episode med psykotiske symptomer</includedValues>
+            <includedValues>ARK-ICD::F328::Andre spesifiserte depressive episoder</includedValues>
+            <includedValues>ARK-ICD::F329::Uspesifisert depressiv episode</includedValues>
+            <includedValues>ARK-ICD::F330::Tilbakevendende depressiv lidelse, aktuell episode mild</includedValues>
+            <includedValues>ARK-ICD::F331::Tilbakevendende depressiv lidelse, aktuell episode moderat</includedValues>
+            <includedValues>ARK-ICD::F3310::Tilbakevend depress lid, moderat episode u/ somatisk syndrom</includedValues>
+            <includedValues>ARK-ICD::F3311::Tilbakevend depress lid, moderat episode m/ somatisk syndrom</includedValues>
+            <includedValues>ARK-ICD::F332::Tilbakev depressiv lid, alvorlig episode u/ psykot symptomer</includedValues>
+            <includedValues>ARK-ICD::F333::Tilbakev depressiv lid, alvorlig episode m/ psykot symptomer</includedValues>
+            <includedValues>ARK-ICD::F334::Tilbakevendende depressiv lidelse, i remisjon</includedValues>
+            <includedValues>ARK-ICD::F338::Andre spesifiserte tilbakevendende depressive lidelser</includedValues>
+            <includedValues>ARK-ICD::F339::Uspesifisert tilbakevendende depressiv lidelse</includedValues>
+            <includedValues>ARK-ICD::F340::Cyklotymi</includedValues>
+            <includedValues>ARK-ICD::F341::Dystymi</includedValues>
+            <includedValues>ARK-ICD::F348::Andre spesifiserte vedvarende affektive lidelser</includedValues>
+            <includedValues>ARK-ICD::F349::Uspesifisert vedvarende affektiv lidelse</includedValues>
+            <includedValues>ARK-ICD::F380::Andre enkeltstående affektive lidelser</includedValues>
+            <includedValues>ARK-ICD::F3800::Blandet affektiv episode</includedValues>
+            <includedValues>ARK-ICD::F381::Andre tilbakevendende affektive lidelser</includedValues>
+            <includedValues>ARK-ICD::F3810::Tilbakevendende kortvarig depressiv lidelse</includedValues>
+            <includedValues>ARK-ICD::F388::Andre spesifiserte affektive lidelser</includedValues>
+            <includedValues>ARK-ICD::F39::Uspesifisert affektiv lidelse</includedValues>
+            <includedValues>ARK-ICD::F400::Agorafobi</includedValues>
+            <includedValues>ARK-ICD::F4000::Agorafobi uten panikklidelse</includedValues>
+            <includedValues>ARK-ICD::F4001::Agorafobi med panikklidelse</includedValues>
+            <includedValues>ARK-ICD::F401::Sosiale fobier</includedValues>
+            <includedValues>ARK-ICD::F402::Spesifikke (isolerte) fobier</includedValues>
+            <includedValues>ARK-ICD::F408::Andre spesifiserte fobiske angstlidelser</includedValues>
+            <includedValues>ARK-ICD::F409::Uspesifisert fobisk angstlidelse</includedValues>
+            <includedValues>ARK-ICD::F410::Panikklidelse [episodisk paroksysmal angst]</includedValues>
+            <includedValues>ARK-ICD::F411::Generalisert angstlidelse</includedValues>
+            <includedValues>ARK-ICD::F412::Blandet angstlidelse og depressiv lidelse</includedValues>
+            <includedValues>ARK-ICD::F413::Andre blandede angstlidelser</includedValues>
+            <includedValues>ARK-ICD::F418::Andre spesifiserte angstlidelser</includedValues>
+            <includedValues>ARK-ICD::F419::Uspesifisert angstlidelse</includedValues>
+            <includedValues>ARK-ICD::F420::Tvangslidelse, mest tvangstanker eller tvangsgrubling</includedValues>
+            <includedValues>ARK-ICD::F421::Tvangslidelse, hovedsakelig tvangshandlinger</includedValues>
+            <includedValues>ARK-ICD::F422::Tvangslidelse, blandede tvangstanker og tvangshandlinger</includedValues>
+            <includedValues>ARK-ICD::F428::Andre spesifiserte obsessiv-kompulsive lidelser</includedValues>
+            <includedValues>ARK-ICD::F429::Uspesifisert obsessiv-kompulsiv lidelse</includedValues>
+            <includedValues>ARK-ICD::F430::Akutt belastningslidelse</includedValues>
+            <includedValues>ARK-ICD::F431::Posttraumatisk stresslidelse [PTSD]</includedValues>
+            <includedValues>ARK-ICD::F432::Tilpasningsforstyrrelser</includedValues>
+            <includedValues>ARK-ICD::F4320::Kortvarig depressiv reaksjon</includedValues>
+            <includedValues>ARK-ICD::F4321::Vedvarende depressiv reaksjon</includedValues>
+            <includedValues>ARK-ICD::F4322::Blandet angstreaksjon og depressiv reaksjon</includedValues>
+            <includedValues>ARK-ICD::F4323::Tilpasningsforstyrr, dominerende forstyrr av andre følelser</includedValues>
+            <includedValues>ARK-ICD::F4324::Tilpasningsforstyrrelse med dominerende atferdsforstyrrelse</includedValues>
+            <includedValues>ARK-ICD::F4325::Tilpasningsforstyrrelse, blandet forstyrr følelser og atferd</includedValues>
+            <includedValues>ARK-ICD::F4328::Tilpasningsforstyrrelse med andre dominerende symptomer</includedValues>
+            <includedValues>ARK-ICD::F438::Andre spesifiserte reaksjoner på alvorlig belastning</includedValues>
+            <includedValues>ARK-ICD::F439::Uspesifisert reaksjon på alvorlig belastning</includedValues>
+            <includedValues>ARK-ICD::F440::Dissosiativ amnesi</includedValues>
+            <includedValues>ARK-ICD::F441::Dissosiativ "fugue"</includedValues>
+            <includedValues>ARK-ICD::F442::Dissosiativ stupor</includedValues>
+            <includedValues>ARK-ICD::F443::Transe og besettelsestilstander</includedValues>
+            <includedValues>ARK-ICD::F444::Dissosiative motoriske forstyrrelser</includedValues>
+            <includedValues>ARK-ICD::F445::Dissosiative krampetilstander</includedValues>
+            <includedValues>ARK-ICD::F446::Dissosiativ følelsesløshet og sanseutfall</includedValues>
+            <includedValues>ARK-ICD::F447::Blandet dissosiativ lidelse [konversjonslidelse]</includedValues>
+            <includedValues>ARK-ICD::F448::Andre spesifiserte dissosiative lidelser</includedValues>
+            <includedValues>ARK-ICD::F4480::Gansers syndrom</includedValues>
+            <includedValues>ARK-ICD::F4481::Multippel personlighet (personlighetsspaltning)</includedValues>
+            <includedValues>ARK-ICD::F4482::Forbigående dissosiative lidelser i barne og ungdomstid</includedValues>
+            <includedValues>ARK-ICD::F4488::Andre spesifiserte dissosiative lidelser</includedValues>
+            <includedValues>ARK-ICD::F449::Uspesifisert dissosiativ lidelse [konversjonslidelse]</includedValues>
+            <includedValues>ARK-ICD::F450::Somatiseringslidelse</includedValues>
+            <includedValues>ARK-ICD::F451::Udifferensiert somatoform lidelse</includedValues>
+            <includedValues>ARK-ICD::F452::Hypokondrisk lidelse</includedValues>
+            <includedValues>ARK-ICD::F453::Somatoform autonom dysfunksjon</includedValues>
+            <includedValues>ARK-ICD::F4530::Somatoform autonom dysfunksjon i hjerte- og kretsløpssystem</includedValues>
+            <includedValues>ARK-ICD::F4531::Somatoform autonom dysfunksjon i øvre tarmkanal</includedValues>
+            <includedValues>ARK-ICD::F4532::Somatoform autonom dysfunksjon i nedre tarmkanal</includedValues>
+            <includedValues>ARK-ICD::F4533::Somatoform autonom dysfunksjon i åndedrettssystem</includedValues>
+            <includedValues>ARK-ICD::F4534::Somatoform autonom dysfunksjon i urogenitalsystem</includedValues>
+            <includedValues>ARK-ICD::F4538::Somatoform autonom dysfunksjon i annet organ eller system</includedValues>
+            <includedValues>ARK-ICD::F454::Vedvarende somatoform smertelidelse</includedValues>
+            <includedValues>ARK-ICD::F458::Andre spesifiserte somatoforme lidelser</includedValues>
+            <includedValues>ARK-ICD::F459::Uspesifisert somatoform lidelse</includedValues>
+            <includedValues>ARK-ICD::F480::Nevrasteni</includedValues>
+            <includedValues>ARK-ICD::F481::Depersonalisasjons- og derealisasjonssyndrom</includedValues>
+            <includedValues>ARK-ICD::F488::Andre spesifiserte nevrotiske lidelser</includedValues>
+            <includedValues>ARK-ICD::F489::Uspesifisert nevrotisk lidelse</includedValues>
+            <includedValues>ARK-ICD::F500::Anorexia nervosa</includedValues>
+            <includedValues>ARK-ICD::F501::Atypisk anorexia nervosa</includedValues>
+            <includedValues>ARK-ICD::F502::Bulimia nervosa</includedValues>
+            <includedValues>ARK-ICD::F503::Atypisk bulimia nervosa</includedValues>
+            <includedValues>ARK-ICD::F504::Overspising forbundet med andre psykiske lidelser</includedValues>
+            <includedValues>ARK-ICD::F505::Oppkast forbundet med andre psykiske lidelser</includedValues>
+            <includedValues>ARK-ICD::F508::Andre spesifiserte spiseforstyrrelser</includedValues>
+            <includedValues>ARK-ICD::F509::Uspesifisert spiseforstyrrelse</includedValues>
+            <includedValues>ARK-ICD::F510::Ikke-organisk insomni</includedValues>
+            <includedValues>ARK-ICD::F511::Ikke-organisk hypersomni</includedValues>
+            <includedValues>ARK-ICD::F512::Ikke-organisk forstyrrelse av søvn-våkenhetsrytmen</includedValues>
+            <includedValues>ARK-ICD::F513::Søvngjengeri [somnambulisme]</includedValues>
+            <includedValues>ARK-ICD::F514::Natteskrekk [søvnterror]</includedValues>
+            <includedValues>ARK-ICD::F515::Mareritt</includedValues>
+            <includedValues>ARK-ICD::F518::Andre spesifiserte ikke-organiske søvnforstyrrelser</includedValues>
+            <includedValues>ARK-ICD::F519::Uspesifisert ikke-organisk søvnlidelse</includedValues>
+            <includedValues>ARK-ICD::F520::Mangel på eller tap av seksuell lyst</includedValues>
+            <includedValues>ARK-ICD::F521::Seksuell aversjon og mangel på seksuell glede</includedValues>
+            <includedValues>ARK-ICD::F5210::Seksuell aversjon</includedValues>
+            <includedValues>ARK-ICD::F5211::Mangel på seksuell glede</includedValues>
+            <includedValues>ARK-ICD::F522::Sviktende genital respons</includedValues>
+            <includedValues>ARK-ICD::F523::Orgastisk dysfunksjon</includedValues>
+            <includedValues>ARK-ICD::F524::Prematur ejakulasjon</includedValues>
+            <includedValues>ARK-ICD::F525::Ikke-organisk vaginisme</includedValues>
+            <includedValues>ARK-ICD::F526::Ikke-organisk dyspareuni</includedValues>
+            <includedValues>ARK-ICD::F527::Forsterket seksualdrift</includedValues>
+            <includedValues>ARK-ICD::F528::Andre seksuelle dysfunksjoner, ikke pga organisk lidelse</includedValues>
+            <includedValues>ARK-ICD::F529::Uspesifisert seksuell dysfunksjon, ikke pga somatisk lidelse</includedValues>
+            <includedValues>ARK-ICD::F530::Lette psykiske/atferdsmessige barseltidsforstyrrelser IKAS</includedValues>
+            <includedValues>ARK-ICD::F531::Alvorlige psykiske/atferdsmess barseltidsforstyrrelser IKAS</includedValues>
+            <includedValues>ARK-ICD::F538::Andre psykiske/atferdsmessige barseltidsforstyrrelser IKAS</includedValues>
+            <includedValues>ARK-ICD::F539::Uspesifisert psykisk forstyrrelse i barseltiden</includedValues>
+            <includedValues>ARK-ICD::F54::Psykiske/atferdsmessige forstyrr v/ tilst klassif annet sted</includedValues>
+            <includedValues>ARK-ICD::F55::Misbruk av ikke-avhengighetsskapende stoffer</includedValues>
+            <includedValues>ARK-ICD::F550::Misbruk av antidepressiva</includedValues>
+            <includedValues>ARK-ICD::F551::Misbruk av laksativa</includedValues>
+            <includedValues>ARK-ICD::F552::Misbruk av analegetika</includedValues>
+            <includedValues>ARK-ICD::F553::Misbruk av antacida</includedValues>
+            <includedValues>ARK-ICD::F554::Misbruk av vitaminer</includedValues>
+            <includedValues>ARK-ICD::F555::Misbruk av steroider eller hormoner</includedValues>
+            <includedValues>ARK-ICD::F556::Misbruk av spesifiserte urter eller folkemedisin</includedValues>
+            <includedValues>ARK-ICD::F558::Misbruk av andre ikke-avhengighetsskapende stoffer</includedValues>
+            <includedValues>ARK-ICD::F559::Misbruk av uspesifisert ikke-avhengighetsskapende stoff</includedValues>
+            <includedValues>ARK-ICD::F59::Uspesif atferdssyndrom i fb med fysiologiske/fysiske forhold</includedValues>
+            <includedValues>ARK-ICD::F600::Paranoid personlighetsforstyrrelse</includedValues>
+            <includedValues>ARK-ICD::F601::Schizoid personlighetsforstyrrelse</includedValues>
+            <includedValues>ARK-ICD::F602::Dyssosial personlighetsforstyrrelse</includedValues>
+            <includedValues>ARK-ICD::F603::Emosjonelt ustabil personlighetsforstyrrelse</includedValues>
+            <includedValues>ARK-ICD::F6030::Emosjonelt ustabil personlighetsforstyrrelse, impulsiv type</includedValues>
+            <includedValues>ARK-ICD::F6031::Emosjonelt ustabil personlighetsforstyrrelse, borderline</includedValues>
+            <includedValues>ARK-ICD::F604::Dramatiserende personlighetsforstyrrelse</includedValues>
+            <includedValues>ARK-ICD::F605::Tvangspreget personlighetsforstyrrelse</includedValues>
+            <includedValues>ARK-ICD::F606::Engstelig [unnvikende] personlighetsforstyrrelse</includedValues>
+            <includedValues>ARK-ICD::F607::Avhengig personlighetsforstyrrelse</includedValues>
+            <includedValues>ARK-ICD::F608::Andre spesifikke personlighetsforstyrrelser</includedValues>
+            <includedValues>ARK-ICD::F609::Uspesifisert personlighetsforstyrrelse</includedValues>
+            <includedValues>ARK-ICD::F610::Blandede personlighetsforstyrrelser</includedValues>
+            <includedValues>ARK-ICD::F611::Plagsomme personlighetsforandringer</includedValues>
+            <includedValues>ARK-ICD::F620::Vedvar personlighetsforandr etter katastrofale livshendelser</includedValues>
+            <includedValues>ARK-ICD::F621::Vedvarende personlighetsforandring etter psykisk lidelse</includedValues>
+            <includedValues>ARK-ICD::F628::Andre spesifiserte vedvarende personlighetsforandringer</includedValues>
+            <includedValues>ARK-ICD::F629::Uspesifisert vedvarende personlighetsforandring</includedValues>
+            <includedValues>ARK-ICD::F630::Patologisk spillelidenskap</includedValues>
+            <includedValues>ARK-ICD::F631::Pyromani</includedValues>
+            <includedValues>ARK-ICD::F632::Kleptomani</includedValues>
+            <includedValues>ARK-ICD::F633::Trikotillomani</includedValues>
+            <includedValues>ARK-ICD::F638::Andre spesifiserte vane- og impulsforstyrrelser</includedValues>
+            <includedValues>ARK-ICD::F639::Uspesifisert vane- og impulsforstyrrelse</includedValues>
+            <includedValues>ARK-ICD::F640::Transseksualisme</includedValues>
+            <includedValues>ARK-ICD::F641::Transvestittisme</includedValues>
+            <includedValues>ARK-ICD::F642::Kjønnsidentitetsforstyrrelse i barndommen</includedValues>
+            <includedValues>ARK-ICD::F648::Andre spesifiserte kjønnsidentitetsforstyrrelser</includedValues>
+            <includedValues>ARK-ICD::F649::Uspesifisert kjønnsidentitetsforstyrrelse</includedValues>
+            <includedValues>ARK-ICD::F650::Fetisjisme</includedValues>
+            <includedValues>ARK-ICD::F651::Fetisjistisk transvestittisme</includedValues>
+            <includedValues>ARK-ICD::F652::Blotting</includedValues>
+            <includedValues>ARK-ICD::F653::Kikking</includedValues>
+            <includedValues>ARK-ICD::F654::Pedofili</includedValues>
+            <includedValues>ARK-ICD::F655::Sadomasochisme</includedValues>
+            <includedValues>ARK-ICD::F656::Multiple forstyrrelser i seksuelle objektvalg</includedValues>
+            <includedValues>ARK-ICD::F658::Andre spesifiserte forstyrrelser i seksuelle objektvalg</includedValues>
+            <includedValues>ARK-ICD::F659::Uspesifisert forstyrrelse av seksuelt objektvalg</includedValues>
+            <includedValues>ARK-ICD::F660::Seksuell utviklingsforstyrrelse</includedValues>
+            <includedValues>ARK-ICD::F6600::Seksuell utviklingsforstyrrelse ved heteroseksualitet</includedValues>
+            <includedValues>ARK-ICD::F6601::Seksuell utviklingsforstyrrelse ved homoseksualitet</includedValues>
+            <includedValues>ARK-ICD::F6602::Seksuell utviklingsforstyrrelse ved biseksualitet</includedValues>
+            <includedValues>ARK-ICD::F6608::Annen seksuell utvikforstyrrelse ved annen seksuell legning</includedValues>
+            <includedValues>ARK-ICD::F661::Jeg-fremmed seksuell legning</includedValues>
+            <includedValues>ARK-ICD::F6610::Jeg-fremmed seksuell legning ved heteroseksualitet</includedValues>
+            <includedValues>ARK-ICD::F6611::Jeg-fremmed seksuell legning ved homoseksualitet</includedValues>
+            <includedValues>ARK-ICD::F6612::Jeg-fremmed seksuell legning ved biseksualitet</includedValues>
+            <includedValues>ARK-ICD::F6618::Jeg-fremmed seksuell legning ved annen seksuell utvikling</includedValues>
+            <includedValues>ARK-ICD::F662::Forstyrrelse av seksuelle forhold</includedValues>
+            <includedValues>ARK-ICD::F6620::Forstyrrelse av seksuelle forhold ved heteroseksualitet</includedValues>
+            <includedValues>ARK-ICD::Z004::Generell psykiatrisk undersøkelse IKAS</includedValues>
+            <includedValues>ARK-ICD::Z032::Obs. ved mistanke om psykiske lidelser og atferdsforst.</includedValues>
+            <includedValues>ARK-ICD::F6621::Forstyrrelse av seksuelle forhold ved homoseksualitet</includedValues>
+            <includedValues>ARK-ICD::F6622::Forstyrrelse av seksuelle forhold ved biseksualitet</includedValues>
+            <includedValues>ARK-ICD::F6628::Annen forstyrr av seksuelle forh ved annen seksuell legning</includedValues>
+            <includedValues>ARK-ICD::F668::Andre spesifiserte psykoseksuelle forstyrrelser</includedValues>
+            <includedValues>ARK-ICD::F6680::Andre psykoseksuelle forstyrrelser ved heteroseksualitet</includedValues>
+            <includedValues>ARK-ICD::F6681::Andre psykoseksuelle forstyrrelser ved homoseksualitet</includedValues>
+            <includedValues>ARK-ICD::F6682::Andre psykoseksuelle forstyrrelser ved biseksualitet</includedValues>
+            <includedValues>ARK-ICD::F6688::Andre psykoseksuelle forstyrrelser v/ annen seksuell legning</includedValues>
+            <includedValues>ARK-ICD::F669::Uspesifisert psykoseksuell forstyrrelse</includedValues>
+            <includedValues>ARK-ICD::F6690::Uspesif psykoseksuell forstyrrelse ved heteroseksualitet</includedValues>
+            <includedValues>ARK-ICD::F6691::Uspesif psykoseksuell forstyrrelse ved homoseksualitet</includedValues>
+            <includedValues>ARK-ICD::F6692::Uspesif psykoseksuell forstyrrelse ved biseksualitet</includedValues>
+            <includedValues>ARK-ICD::F6698::Uspesif psykoseksuell forstyrrelse v/ annen seksuell legning</includedValues>
+            <includedValues>ARK-ICD::F680::Forsterking av somatiske symptomer av psykiske årsaker</includedValues>
+            <includedValues>ARK-ICD::F681::Viljestyrt simulering, fysiske eller psykiske sympt/funksjon</includedValues>
+            <includedValues>ARK-ICD::F688::Andre forstyrrelser av voksen personlighet og atferd</includedValues>
+            <includedValues>ARK-ICD::F69::Uspesifisert forstyrrelse av voksen personlighet og atferd</includedValues>
+            <includedValues>ARK-ICD::F840::Barneautisme</includedValues>
+            <includedValues>ARK-ICD::F841::Atypisk autisme</includedValues>
+            <includedValues>ARK-ICD::F842::Retts syndrom</includedValues>
+            <includedValues>ARK-ICD::F843::Annen disintegrativ forstyrrelse i barndommen</includedValues>
+            <includedValues>ARK-ICD::F844::Overaktivitet ved psyk utviklhemming/ bevegelsesstereotypier</includedValues>
+            <includedValues>ARK-ICD::F845::Aspergers syndrom</includedValues>
+            <includedValues>ARK-ICD::F848::Andre spesifiserte gjennomgripende utviklingsforstyrrelser</includedValues>
+            <includedValues>ARK-ICD::F849::Uspesifisert gjennomgripende utviklingsforstyrrelse</includedValues>
+            <includedValues>ARK-ICD::F900::Forstyrrelser av aktivitet og oppmerksomhet</includedValues>
+            <includedValues>ARK-ICD::F901::Hyperkinetisk atferdsforstyrrelse</includedValues>
+            <includedValues>ARK-ICD::F908::Andre spesifiserte hyperkinetiske forstyrrelser</includedValues>
+            <includedValues>ARK-ICD::F909::Uspesifisert hyperkinetisk forstyrrelse</includedValues>
+            <includedValues>ARK-ICD::F910::Atferdsforstyrrelser begrenset til familien</includedValues>
+            <includedValues>ARK-ICD::F911::Usosialisert atferdsforstyrrelse</includedValues>
+            <includedValues>ARK-ICD::F912::Sosialisert atferdsforstyrrelse</includedValues>
+            <includedValues>ARK-ICD::F913::Opposisjonell atferdsforstyrrelse</includedValues>
+            <includedValues>ARK-ICD::F918::Andre spesifiserte atferdsforstyrrelser</includedValues>
+            <includedValues>ARK-ICD::F919::Uspesifisert atferdsforstyrrelse</includedValues>
+            <includedValues>ARK-ICD::F920::Depressiv atferdsforstyrrelse</includedValues>
+            <includedValues>ARK-ICD::F928::Andre blandede atferds- og følelsesmessige forstyrrelser</includedValues>
+            <includedValues>ARK-ICD::F929::Uspesifisert blandet atferds- og følelsesmessig forstyrrelse</includedValues>
+            <includedValues>ARK-ICD::F930::Separasjonsangst i barndommen</includedValues>
+            <includedValues>ARK-ICD::F931::Fobisk angstlidelse i barndommen</includedValues>
+            <includedValues>ARK-ICD::F932::Sosial angstlidelse i barndommen</includedValues>
+            <includedValues>ARK-ICD::F933::Overdreven søskenrivalisering, patologisk</includedValues>
+            <includedValues>ARK-ICD::F938::Andre følelsesmessige forstyrrelser i barndommen</includedValues>
+            <includedValues>ARK-ICD::F939::Uspesifisert følelsesmessig forstyrrelse i barndommen</includedValues>
+            <includedValues>ARK-ICD::F940::Elektiv mutisme</includedValues>
+            <includedValues>ARK-ICD::F941::Reaktiv tilknytningsforstyrrelse i barndommen</includedValues>
+            <includedValues>ARK-ICD::F942::Udiskriminerende tilknytningsforstyrrelse i barndommen</includedValues>
+            <includedValues>ARK-ICD::F948::Andre forstyrrelser av sosial fungering i barndommen</includedValues>
+            <includedValues>ARK-ICD::F949::Uspesifisert forstyrrelse av sosial fungering i barndommen</includedValues>
+            <includedValues>ARK-ICD::F950::Forbigående "tics"</includedValues>
+            <includedValues>ARK-ICD::F951::Kroniske motoriske eller vokale "tics"</includedValues>
+            <includedValues>ARK-ICD::F952::Tourettes syndrom</includedValues>
+            <includedValues>ARK-ICD::F958::Andre spesifiserte syndromer med "tics"</includedValues>
+            <includedValues>ARK-ICD::F959::Uspesifiserte "tics"</includedValues>
+            <includedValues>ARK-ICD::F980::Ikke-organisk enurese</includedValues>
+            <includedValues>ARK-ICD::F981::Ikke-organisk enkoprese</includedValues>
+            <includedValues>ARK-ICD::F982::Spiseforstyrrelse i barndommen</includedValues>
+            <includedValues>ARK-ICD::F983::Pica i spedbarns- og barnealder</includedValues>
+            <includedValues>ARK-ICD::F984::Stereotype bevegelsesforstyrrelser</includedValues>
+            <includedValues>ARK-ICD::F985::Stamming</includedValues>
+            <includedValues>ARK-ICD::F986::Løpsk tale</includedValues>
+            <includedValues>ARK-ICD::F988::Andre atferds/følelsesforstyrrelser, barne- og ungdomsalder</includedValues>
+            <includedValues>ARK-ICD::F989::Uspesif atferds/følelsesforstyrrels, barne- og ungdomsalder</includedValues>
+            <includedValues>ARK-ICD::F99::Uspesifisert psykisk forstyrrelse eller lidelse</includedValues>
+            <includedValues>ARK-ICD::R400::Somnolens</includedValues>
+            <includedValues>ARK-ICD::R401::Stupor</includedValues>
+            <includedValues>ARK-ICD::R402::Uspesifisert koma</includedValues>
+            <includedValues>ARK-ICD::R410::Uspesifisert desorientering</includedValues>
+            <includedValues>ARK-ICD::R411::Anterograd amnesi</includedValues>
+            <includedValues>ARK-ICD::R412::Retrograd amnesi</includedValues>
+            <includedValues>ARK-ICD::R413::Annen amnesi</includedValues>
+            <includedValues>ARK-ICD::R418::Andre, uspes. symp./tegn tilkn. kognitive funk./bevissthet</includedValues>
+            <includedValues>ARK-ICD::R42::Svimmelhet</includedValues>
+            <includedValues>ARK-ICD::R430::Anosmi</includedValues>
+            <includedValues>ARK-ICD::R431::Parosmi</includedValues>
+            <includedValues>ARK-ICD::R432::Parageusi</includedValues>
+            <includedValues>ARK-ICD::R438::Andre og uspesifiserte forstyrrelser i lukt og smak</includedValues>
+            <includedValues>ARK-ICD::R440::Hørselshallusinasjoner</includedValues>
+            <includedValues>ARK-ICD::R441::Synshallusinasjoner</includedValues>
+            <includedValues>ARK-ICD::R442::Andre hallusinasjoner</includedValues>
+            <includedValues>ARK-ICD::R443::Uspesifiserte hallusinasjoner</includedValues>
+            <includedValues>ARK-ICD::R448::Andre og uspes. symp./tegn tilkn. gen. sensasjoner/persep.</includedValues>
+            <includedValues>ARK-ICD::R450::Nervøsitet</includedValues>
+            <includedValues>ARK-ICD::R451::Rastløshet og agitasjon</includedValues>
+            <includedValues>ARK-ICD::R452::Ulykkelighet</includedValues>
+            <includedValues>ARK-ICD::R453::Demoralisering og apati</includedValues>
+            <includedValues>ARK-ICD::R454::Irritabilitet og sinne</includedValues>
+            <includedValues>ARK-ICD::R455::Fiendtlighet</includedValues>
+            <includedValues>ARK-ICD::R456::Fysisk voldelighet</includedValues>
+            <includedValues>ARK-ICD::R457::Uspesifisert tilstand av emosjonelt sjokk og stress</includedValues>
+            <includedValues>ARK-ICD::R458::Andre spes. symp./tegn med tilkn. til emosjonell tilstand</includedValues>
+            <includedValues>ARK-ICD::R460::Meget dårlig personlig hygiene</includedValues>
+            <includedValues>ARK-ICD::R461::Bisart personlig utseende</includedValues>
+            <includedValues>ARK-ICD::R462::Merkelig og uforklarlig opptreden</includedValues>
+            <includedValues>ARK-ICD::R463::Overaktivitet</includedValues>
+            <includedValues>ARK-ICD::R464::Langsom og treg reaksjonsevne</includedValues>
+            <includedValues>ARK-ICD::R465::Mistenksomhet og påfallende unnvikenhet</includedValues>
+            <includedValues>ARK-ICD::R466::Overdreven engstelse og bekymring ved stressituasjoner</includedValues>
+            <includedValues>ARK-ICD::R467::Omstendelighet og ordgyteri som tåkelegger års. til kontakt</includedValues>
+            <includedValues>ARK-ICD::R468::Andre spes. sympt. og tegn med tilkn. til utseende og atferd</includedValues>
+            <includedValues>ARK-ICD::1000::Ingen påvist tilstand på akse 1</includedValues>
+            <includedValues>ARK-ICD::1999::Mangelfull informasjon for å kode på akse 1</includedValues>
+            <includedValues>ARK-ICD::F61::Blandede og andre personlighetsforstyrrelser</includedValues>
+            <includedValues>ARK-ICD::Z133::Målr. u.s. med henblikk på psyk. lidelser og atferdsforst.</includedValues>
+            <includedValues>ARK-ICD::Z134::Målr. u.s. med henblikk på enkelte utviklingsavvik i barneår</includedValues>
+            <includedValues>ARK-ICD::Z700::Rådgivning i forbindelse med holdning til seksualitet</includedValues>
+            <includedValues>ARK-ICD::Z701::Rådg. i forb. med pasientens seksuelle atferd og orientering</includedValues>
+            <includedValues>ARK-ICD::Z703::Rådg. i forb. m. bekymringer vedr. seks. holdn./atf./orient.</includedValues>
+            <includedValues>ARK-ICD::Z708::Annen spesifisert rådgivning i seksuelle spørsmål</includedValues>
+            <includedValues>ARK-ICD::Z710::Kontakt på vegne av annen person</includedValues>
+            <includedValues>ARK-ICD::Z711::Frykt for lidelse der ingen diagnose er stilt</includedValues>
+            <includedValues>ARK-ICD::Z712::Kontakt for å få forklaring på undersøkelsesresultater</includedValues>
+          </constraint>
+        </Rule>
+      </Item>
+    </Content>
+    <Content xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.bup_axe.v0" concept_name="Bup axe" max="1" path="/content[at0001]" name="Axe 2">
+      <Item xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.problem_diagnosis.v1" concept_name="Problem/diagnose" path="/items">
+        <Rule path="/data[at0001]/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>ARK-ICD::F800::Spesifikk artikulasjonsforstyrrelse</includedValues>
+            <includedValues>ARK-ICD::F801::Ekspressiv språkforstyrrelse</includedValues>
+            <includedValues>ARK-ICD::F802::Impressiv språkforstyrrelse</includedValues>
+            <includedValues>ARK-ICD::F803::Ervervet afasi med epilepsi [Landau-Kleffners syndrom]</includedValues>
+            <includedValues>ARK-ICD::F808::Andre spesifiserte utviklingsforstyrrelser av tale og språk</includedValues>
+            <includedValues>ARK-ICD::F809::Uspesifisert utviklingsforstyrrelse av tale og språk</includedValues>
+            <includedValues>ARK-ICD::F810::Spesifikk leseforstyrrelse</includedValues>
+            <includedValues>ARK-ICD::F811::Spesifikk staveforstyrrelse</includedValues>
+            <includedValues>ARK-ICD::F812::Spesifikk forstyrrelse i regneferdighet</includedValues>
+            <includedValues>ARK-ICD::F813::Blandet utviklingsforstyrrelse i skoleferdigheter</includedValues>
+            <includedValues>ARK-ICD::F818::Andre utviklingsforstyrrelser i skoleferdigheter</includedValues>
+            <includedValues>ARK-ICD::F819::Uspesifisert utviklingsforstyrrelse i skoleferdigheter</includedValues>
+            <includedValues>ARK-ICD::F82::Spesifikk utviklingsforstyrrelse i motoriske ferdigheter</includedValues>
+            <includedValues>ARK-ICD::F83::Blandet utviklingsforstyrrelse i spesifikke ferdigheter</includedValues>
+            <includedValues>ARK-ICD::F88::Andre forstyrrelser av psykologisk utvikling</includedValues>
+            <includedValues>ARK-ICD::F89::Uspesifisert forstyrrelse av psykologisk utvikling</includedValues>
+            <includedValues>ARK-ICD::2000::Ingen påvist tilstand på akse 2</includedValues>
+            <includedValues>ARK-ICD::2999::Mangelfull informasjon for å kode på akse 2</includedValues>
+          </constraint>
+        </Rule>
+        <Rule path="/data[at0001]/items[at0073]">
+          <constraint xsi:type="multipleConstraint">
+            <includedTypes>Coded_text</includedTypes>
+          </constraint>
+        </Rule>
+      </Item>
+    </Content>
+    <Content xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.bup_axe.v0" concept_name="Bup axe" max="1" path="/content[at0001]" name="Axe 3">
+      <Item xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.problem_diagnosis.v1" concept_name="Problem/diagnose" path="/items">
+        <Rule path="/data[at0001]/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>ARK-ICD::F700::Lett psykisk utviklingshemming, ingen/minimale atferdsprobl</includedValues>
+            <includedValues>ARK-ICD::F701::Lett psykisk utviklingshemming, betydelige atferdsproblemer</includedValues>
+            <includedValues>ARK-ICD::F708::Lett psykisk utviklingshemming, annen angiv av atferdsprobl</includedValues>
+            <includedValues>ARK-ICD::F709::Lett psykisk utviklingshemming, atferdsproblemer ikke angitt</includedValues>
+            <includedValues>ARK-ICD::F710::Moderat psykisk utviklingshemming, ingen/minim atferdsprobl</includedValues>
+            <includedValues>ARK-ICD::F711::Moderat psykisk utviklingshemming, betyd atferdsproblemer</includedValues>
+            <includedValues>ARK-ICD::F718::Moderat psykisk utviklingshemming, annen angiv atferdsprobl</includedValues>
+            <includedValues>ARK-ICD::F719::Moderat psykisk utviklingshemming, atferdsprobl ikke angitt</includedValues>
+            <includedValues>ARK-ICD::F720::Alvorlig psykisk utviklingshemming, ingen/minim atferdsprobl</includedValues>
+            <includedValues>ARK-ICD::F721::Alvorlig psykisk utviklingshemming, betyd atferdsproblemer</includedValues>
+            <includedValues>ARK-ICD::F728::Alvorlig psykisk utviklingshemming, annen angiv atferdsprobl</includedValues>
+            <includedValues>ARK-ICD::F729::Alvorlig psykisk utviklingshemming, atferdsprobl ikke angitt</includedValues>
+            <includedValues>ARK-ICD::F730::Dyp psykisk utviklingshemming, ingen/minimale atferdsproblem</includedValues>
+            <includedValues>ARK-ICD::F731::Dyp psykisk utviklingshemming, betydelige atferdsproblemer</includedValues>
+            <includedValues>ARK-ICD::F738::Dyp psykisk utviklingshemming, annen angiv av atferdsproblem</includedValues>
+            <includedValues>ARK-ICD::F739::Dyp psykisk utviklingshemming, atferdsproblemer ikke angitt</includedValues>
+            <includedValues>ARK-ICD::F780::Annen psykisk utviklingshemming, ingen/minimale atferdsprobl</includedValues>
+            <includedValues>ARK-ICD::F781::Annen psykisk utviklingshemming, betydelige atferdsproblemer</includedValues>
+            <includedValues>ARK-ICD::F788::Annen psykisk utviklingshemming, annen angiv av atferdsprobl</includedValues>
+            <includedValues>ARK-ICD::F789::Annen psykisk utviklingshemming, atferdsproblem ikke angitt</includedValues>
+            <includedValues>ARK-ICD::F790::Uspesif psykisk utviklingshemming, ingen/minim atferdsprobl</includedValues>
+            <includedValues>ARK-ICD::F791::Uspesif psykisk utviklingshemming, betyd atferdsproblemer</includedValues>
+            <includedValues>ARK-ICD::F798::Uspesif psykisk utviklingshemming, annen angiv atferdsprobl</includedValues>
+            <includedValues>ARK-ICD::F799::Uspesif psykisk utviklingshemming, atferdsprobl ikke angitt</includedValues>
+            <includedValues>ARK-ICD::3000::Ikke påvist psykisk utviklingshemming</includedValues>
+            <includedValues>ARK-ICD::3999::Mangelfull informasjon for å kode på akse 3</includedValues>
+          </constraint>
+        </Rule>
+      </Item>
+    </Content>
+    <Content xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.bup_axe.v0" concept_name="Bup axe" max="1" path="/content[at0001]" name="Axe 4">
+      <Item xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.problem_diagnosis.v1" concept_name="Problem/diagnose" path="/items">
+        <Rule path="/data[at0001]/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <termQueryId terminologyID="ICD10" terminologyLang="en-GB" queryName="ICD10" />
+          </constraint>
+        </Rule>
+      </Item>
+    </Content>
+    <Content xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.bup_axe.v0" concept_name="Bup axe" max="1" path="/content[at0001]" name="Axe 5">
+      <Item xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.problem_diagnosis.v1" concept_name="Problem/diagnose" path="/items">
+        <Rule path="/data[at0001]/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>ARK-ICD::1.0::Manglende varme i foreldre-barn relasjonene</includedValues>
+            <includedValues>ARK-ICD::1.1::Disharmoni mellom voksne i familien</includedValues>
+            <includedValues>ARK-ICD::1.2::Fiendtlighet mot eller syndebukkgjÃ¸ring av barnet</includedValues>
+            <includedValues>ARK-ICD::1.3::Fysisk barnemishandling</includedValues>
+            <includedValues>ARK-ICD::1.4::Seksuelle overgrep (innen familien)</includedValues>
+            <includedValues>ARK-ICD::1.8::Annen type avvikende relasjon(er) innen familien</includedValues>
+            <includedValues>ARK-ICD::2.0::Forelder psykisk syk/avvikende</includedValues>
+            <includedValues>ARK-ICD::2.1::Forelder funksjonshemmet/ufÃ¸r</includedValues>
+            <includedValues>ARK-ICD::2.2::Psykisk eller fysisk funksjonshemmet sÃ¸sken</includedValues>
+            <includedValues>ARK-ICD::2.8::Annet medlem i barnets husstand psykisk eller fysisk funksjonshemmet</includedValues>
+            <includedValues>ARK-ICD::3::Inadekvat eller forstyrret kommunikasjon innen familien</includedValues>
+            <includedValues>ARK-ICD::4.0::Overbeskyttende foreldre</includedValues>
+            <includedValues>ARK-ICD::4.1::Inadekvat foreldretilsyn/-kontroll</includedValues>
+            <includedValues>ARK-ICD::4.2::Manglende viktige erfaringer - understimulering</includedValues>
+            <includedValues>ARK-ICD::4.3::UtilbÃ¸rlig press fra foreldrene</includedValues>
+            <includedValues>ARK-ICD::4.8::Annet avvikende ved oppdragelsen</includedValues>
+            <includedValues>ARK-ICD::5.0::Oppvekst i institusjon</includedValues>
+            <includedValues>ARK-ICD::5.1::Avvikende foreldresituasjon</includedValues>
+            <includedValues>ARK-ICD::5.2::Isolert familie</includedValues>
+            <includedValues>ARK-ICD::5.3::LevekÃ¥r som kan fÃ¸re til en risikofylt psykososial situasjon</includedValues>
+            <includedValues>ARK-ICD::5.8::Annet avvikende nÃ¦rmiljÃ¸</includedValues>
+            <includedValues>ARK-ICD::6.0::Tap av nÃ¦re fÃ¸lelsesmessige relasjoner</includedValues>
+            <includedValues>ARK-ICD::6.1::Fjerning fra hjemmet som medfÃ¸rer en betydelig belastning/pÃ¥kjenning</includedValues>
+            <includedValues>ARK-ICD::6.2::Negativ forandring av familiesammensetningen</includedValues>
+            <includedValues>ARK-ICD::6.3::Hendelser som fÃ¸rer til tap av selvfÃ¸lelse</includedValues>
+            <includedValues>ARK-ICD::6.4::Seksuelle overgrep (utenfor familien)</includedValues>
+            <includedValues>ARK-ICD::6.5::Personlige skremmende erfaringer</includedValues>
+            <includedValues>ARK-ICD::6.8::Andre akutte livshendelser</includedValues>
+            <includedValues>ARK-ICD::7.0::ForfÃ¸lgelse eller negativ diskriminering</includedValues>
+            <includedValues>ARK-ICD::7.1::Flytting eller sosial omplassering</includedValues>
+            <includedValues>ARK-ICD::7.8::Andre samfunnsmessige belastningsfaktorer</includedValues>
+            <includedValues>ARK-ICD::8.0::Disharmoniske relasjoner med jevnaldrende</includedValues>
+            <includedValues>ARK-ICD::8.1::LÃ¦rere eller arbeidsledere som gjÃ¸r barnet til syndebukk</includedValues>
+            <includedValues>ARK-ICD::8.2::Uro i skole/arbeidsmiljÃ¸et</includedValues>
+            <includedValues>ARK-ICD::8.8::Andre kroniske mellommenneskelige belastninger forbundet med skole/arbeid</includedValues>
+            <includedValues>ARK-ICD::9.0::Oppvekst i institusjon (pga barnets egen forstyrrelse)</includedValues>
+            <includedValues>ARK-ICD::9.1::Fjerning fra hjemmet (pga barnets egen forstyrrelse) som medfÃ¸rer en betydelig belastning/pÃ¥kjenning</includedValues>
+            <includedValues>ARK-ICD::9.2::Hendelser (pga barnets egen atferd) som fÃ¸rer til tap av selvfÃ¸lelse</includedValues>
+            <includedValues>ARK-ICD::9.8::Andre belastende hendelser/forhold som er resultat av barnets forstyrrelse</includedValues>
+            <includedValues>ARK-ICD::5000::Ikke pÃ¥vist avvikende psykososiale forhold</includedValues>
+            <includedValues>ARK-ICD::5999::Mangelfull informasjon for Ã¥ kode akse 5</includedValues>
+          </constraint>
+        </Rule>
+      </Item>
+    </Content>
+    <Content xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.bup_axe.v0" concept_name="Bup axe" max="1" path="/content[at0001]" name="Axe 6">
+      <Item xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.problem_diagnosis.v1" concept_name="Problem/diagnose" path="/items">
+        <Rule path="/data[at0001]/items[at0002]">
+          <constraint xsi:type="textConstraint">
+            <includedValues>BUP-AXE6::1::1</includedValues>
+            <includedValues>BUP-AXE6::2::2</includedValues>
+            <includedValues>BUP-AXE6::3::3</includedValues>
+            <includedValues>BUP-AXE6::4::4</includedValues>
+            <includedValues>BUP-AXE6::5::5</includedValues>
+            <includedValues>BUP-AXE6::6::6</includedValues>
+            <includedValues>BUP-AXE6::7::7</includedValues>
+            <includedValues>BUP-AXE6::8::8</includedValues>
+            <includedValues>BUP-AXE6::9::9</includedValues>
+            <includedValues>BUP-AXE6::10::10</includedValues>
+            <includedValues>BUP-AXE6::11::11</includedValues>
+            <includedValues>BUP-AXE6::12::12</includedValues>
+            <includedValues>BUP-AXE6::13::13</includedValues>
+            <includedValues>BUP-AXE6::14::14</includedValues>
+            <includedValues>BUP-AXE6::15::15</includedValues>
+            <includedValues>BUP-AXE6::16::16</includedValues>
+            <includedValues>BUP-AXE6::17::17</includedValues>
+            <includedValues>BUP-AXE6::18::18</includedValues>
+            <includedValues>BUP-AXE6::19::19</includedValues>
+            <includedValues>BUP-AXE6::20::20</includedValues>
+            <includedValues>BUP-AXE6::21::21</includedValues>
+            <includedValues>BUP-AXE6::22::22</includedValues>
+            <includedValues>BUP-AXE6::23::23</includedValues>
+            <includedValues>BUP-AXE6::24::24</includedValues>
+            <includedValues>BUP-AXE6::25::25</includedValues>
+            <includedValues>BUP-AXE6::26::26</includedValues>
+            <includedValues>BUP-AXE6::27::27</includedValues>
+            <includedValues>BUP-AXE6::28::28</includedValues>
+            <includedValues>BUP-AXE6::29::29</includedValues>
+            <includedValues>BUP-AXE6::30::30</includedValues>
+            <includedValues>BUP-AXE6::31::31</includedValues>
+            <includedValues>BUP-AXE6::32::32</includedValues>
+            <includedValues>BUP-AXE6::33::33</includedValues>
+            <includedValues>BUP-AXE6::34::34</includedValues>
+            <includedValues>BUP-AXE6::35::35</includedValues>
+            <includedValues>BUP-AXE6::36::36</includedValues>
+            <includedValues>BUP-AXE6::37::37</includedValues>
+            <includedValues>BUP-AXE6::38::38</includedValues>
+            <includedValues>BUP-AXE6::39::39</includedValues>
+            <includedValues>BUP-AXE6::40::40</includedValues>
+            <includedValues>BUP-AXE6::41::41</includedValues>
+            <includedValues>BUP-AXE6::42::42</includedValues>
+            <includedValues>BUP-AXE6::43::43</includedValues>
+            <includedValues>BUP-AXE6::44::44</includedValues>
+            <includedValues>BUP-AXE6::45::45</includedValues>
+            <includedValues>BUP-AXE6::46::46</includedValues>
+            <includedValues>BUP-AXE6::47::47</includedValues>
+            <includedValues>BUP-AXE6::48::48</includedValues>
+            <includedValues>BUP-AXE6::49::49</includedValues>
+            <includedValues>BUP-AXE6::50::50</includedValues>
+            <includedValues>BUP-AXE6::51::51</includedValues>
+            <includedValues>BUP-AXE6::52::52</includedValues>
+            <includedValues>BUP-AXE6::53::53</includedValues>
+            <includedValues>BUP-AXE6::54::54</includedValues>
+            <includedValues>BUP-AXE6::55::55</includedValues>
+            <includedValues>BUP-AXE6::56::56</includedValues>
+            <includedValues>BUP-AXE6::57::57</includedValues>
+            <includedValues>BUP-AXE6::58::58</includedValues>
+            <includedValues>BUP-AXE6::59::59</includedValues>
+            <includedValues>BUP-AXE6::60::60</includedValues>
+            <includedValues>BUP-AXE6::61::61</includedValues>
+            <includedValues>BUP-AXE6::62::62</includedValues>
+            <includedValues>BUP-AXE6::63::63</includedValues>
+            <includedValues>BUP-AXE6::64::64</includedValues>
+            <includedValues>BUP-AXE6::65::65</includedValues>
+            <includedValues>BUP-AXE6::66::66</includedValues>
+            <includedValues>BUP-AXE6::67::67</includedValues>
+            <includedValues>BUP-AXE6::68::68</includedValues>
+            <includedValues>BUP-AXE6::69::69</includedValues>
+            <includedValues>BUP-AXE6::70::70</includedValues>
+            <includedValues>BUP-AXE6::71::71</includedValues>
+            <includedValues>BUP-AXE6::72::72</includedValues>
+            <includedValues>BUP-AXE6::73::73</includedValues>
+            <includedValues>BUP-AXE6::74::74</includedValues>
+            <includedValues>BUP-AXE6::75::75</includedValues>
+            <includedValues>BUP-AXE6::76::76</includedValues>
+            <includedValues>BUP-AXE6::77::77</includedValues>
+            <includedValues>BUP-AXE6::78::78</includedValues>
+            <includedValues>BUP-AXE6::79::79</includedValues>
+            <includedValues>BUP-AXE6::80::80</includedValues>
+            <includedValues>BUP-AXE6::81::81</includedValues>
+            <includedValues>BUP-AXE6::82::82</includedValues>
+            <includedValues>BUP-AXE6::83::83</includedValues>
+            <includedValues>BUP-AXE6::84::84</includedValues>
+            <includedValues>BUP-AXE6::85::85</includedValues>
+            <includedValues>BUP-AXE6::86::86</includedValues>
+            <includedValues>BUP-AXE6::87::87</includedValues>
+            <includedValues>BUP-AXE6::88::88</includedValues>
+            <includedValues>BUP-AXE6::89::89</includedValues>
+            <includedValues>BUP-AXE6::90::90</includedValues>
+            <includedValues>BUP-AXE6::91::91</includedValues>
+            <includedValues>BUP-AXE6::92::92</includedValues>
+            <includedValues>BUP-AXE6::93::93</includedValues>
+            <includedValues>BUP-AXE6::94::94</includedValues>
+            <includedValues>BUP-AXE6::95::95</includedValues>
+            <includedValues>BUP-AXE6::96::96</includedValues>
+            <includedValues>BUP-AXE6::97::97</includedValues>
+            <includedValues>BUP-AXE6::98::98</includedValues>
+            <includedValues>BUP-AXE6::99::99</includedValues>
+            <includedValues>BUP-AXE6::100::100</includedValues>
+            <includedValues>BUP-AXE6::6000::Ikke bedømt på akse 6 pga. alder under 4 år</includedValues>
+            <includedValues>BUP-AXE6::6999::Mangelfull informasjon for å kode akse 6</includedValues>
+          </constraint>
+        </Rule>
+      </Item>
+    </Content>
+  </definition>
+</template>

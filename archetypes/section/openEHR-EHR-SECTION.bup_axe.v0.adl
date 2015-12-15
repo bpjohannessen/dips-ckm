@@ -1,0 +1,43 @@
+﻿archetype (adl_version=1.4)
+	openEHR-EHR-SECTION.bup_axe.v0
+
+concept
+	[at0000]	-- Bup axe
+language
+	original_language = <[ISO_639-1::en]>
+description
+	original_author = <
+		["name"] = <"Bjørn Næss">
+		["email"] = <"bna@dips.no">
+		["organisation"] = <"DIPS ASA">
+		["date"] = <"2015-12-10">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"Container to hold BUP axial coding">
+			use = <"">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"0">
+	other_contributors = <>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"B9B22ECC660CC0F0286A8589FC8AC43A">
+	>
+
+definition
+	SECTION[at0000] matches {*}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Bup axe">
+					description = <"Container to hold BUP axial coding">
+				>
+			>
+		>
+	>
