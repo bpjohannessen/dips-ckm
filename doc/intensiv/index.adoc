@@ -1,3 +1,5 @@
+:imagesdir: images
+
 = Intensiv og intensivrapportering 
 
 == Bakgrunn
@@ -204,8 +206,8 @@ Røntgen thorax, ECCO, EKG, fysioterapi, ordinære sårskift, suging, innleggels
 CAUTION: Maksimalt antall poeng for et døgn 56 p
 
 == SOFA
-!===
-|Grad |Sirkulasjon| Respirasjon| Nyrefunksjon| SNS |Koagulasjon| Lever
+|===
+|Grad |Sirkulasjon footnote:[Alle doser gitt i µg/kg/min, DA= Dopamin, NA=Noradrenalin, A=Adrenalin ]| Respirasjon footnote:[3 eller 4 poeng bare for pasienter på respirator (NIV+IPPV)]| Nyrefunksjon| SNS |Koagulasjon| Lever
 | 
 |MAP og vasopressor
 |PaO2/FiO2 ratio (kPa)
@@ -254,4 +256,209 @@ CAUTION: Maksimalt antall poeng for et døgn 56 p
 |< 20
 |>204 
 
-|====
+|===
+
+
+* The scores can be used in a number of ways:
+
+** As individual scores for each organ to determine progression of organ dysfunction.
+** As the sum of scores on one single ICU day.
+** As the sum of the worst scores during the ICU stay.
+
+* It is believed to provide a better stratification of the mortality risk in ICU patients given that the data used to calculate the score is not restricted to admission values. 
+
+Sequential Organ Failure Assessment (SOFA) er en skår for dysfunksjon/svikt i seks ulike organsystemer hos voksne (> 16 år) intensivpasienter. Skåringen gjøres en gang i døgnet, på et fast tidspunkt (f. eks. kl. 07 eller 08), og skal gjøres med utgangspunkt i de mest avvikende verdiene de foregående 24 timer.
+
+Ved manglende verdi, settes siste foregående målte verdi inn. Der det ikke foreligger noen data settes som default SOFA = 0 (normal verdi) 
+
+
+== Årsak til innleggelse 
+
+Årsak til innleggelse i intensivavdelingen (modifisert etter APACHE III)
+
+=== Primærårsak til dette intensivoppholdet (vurdert av lege)
+
+Foreta ett valg mellom disse 11 kategoriene (obligatorisk) i nedtrekksmenyen
+
+1. Respiratorisk svikt
+2. Sirkulatorisk/kardiovaskulær svikt
+3. Gastroenterologisk svikt
+4. Nevrologisk svikt
+5. Sepsis
+6. Skade/traume
+7. Metabolsk/intoksikasjon
+8. Hematologisk svikt
+9. Nyresvikt
+10. Postoperativt
+11. Annet
+
+=== Sekundærårsak (ett valg – frivillig)
+1. Respiratorisk svikt
+2. Sirkulatorisk/kardiovaskulær svikt
+3. Gastroenterologisk svikt
+4. Nevrologisk svikt
+5. Sepsis
+6. Skade/traume
+7. Metabolsk/intoksikasjon
+8. Hematologisk svikt
+9. Nyresvikt
+10. Postoperativt
+11. Annet
+
+=== Undergrupper for årsak (frivillig registrering) 
+
+
+Når man har gjort et valg av primærårsak, og ev. sekundærårsak, vil det for hvert valg komme opp en liste med noen utvalgte undergrupper/diagnoser for nærmere beskrivelse av årsaken: 
+
+==== Respiratorisk svikt
+
+* J96.0 Akutt respirasjonssvikt
+* J18.9 Pneumoni (uspes.)
+* J44.1 KOLS (forverring etc.)
+* J80 ARDS
+* J98.1 Atelektase
+* J81 Lungeødem/stuvning
+* J95.1 Postoperativ respirasjonssvikt (torakal kirurgi)
+* J95.2 Postoperativ respirasjonssvikt (ikke-torakal kirurgi)
+* Annet
+
+==== Sirkulatorisk/kardiovaskulær svikt
+* I20 Angina pectoris 
+* I21 Hjerteinfarkt
+* I50 Hjertesvikt
+* I49 Arytmi
+* I42 Kardiomyopati
+* Annet 
+
+==== Gastrointestinal svikt
+* K22.3 Øsofagusperforasjon
+* K92.0 Hematemese
+* K92.1 Melena
+* K63.1 Tarmperforasjon (ikke-traumatisk)
+* K56.7 Uspesifisert ileus
+* K85 Akutt pankreatitt
+* K83 Kolangitt
+* K52.9 Uspesifisert ikke-infeksiøs gastroenteritt og kolitt
+** Infeksjon (appendicitt, kolecystitt, kolangitt, divertikulitt etc.)
+* K70 Alkoholisk leversykdom
+* K71 Toksisk leversykdom
+* B15, B16, B17 Akutt virushepatitt (Hep A, Hep B, annen virushepatitt)
+* K55.0 Akutt vaskulær forstyrrelse i tarm
+* Annet 
+
+==== Nevrologisk svikt (SNS=sentralnervesystemet)
+* G00 Bakteriell meningitt
+* G04 Encefalitt , myelitt og encefalomyelitt
+* G06.1 Abscess
+* G61 Inflammatorisk polynevropati (Guillan-Barré etc.)
+* G40.9 Kramper (epilepsi)
+* R25.2 Kramper (andre)
+* I61 Blødning intrakranielt (hjerne, hjernestamme)
+* I60 Subaraknoidalbødning
+* I62 Epi-/subduralblødning
+* I63 Infarkt i SNS (hjerne, hjernestamme)
+* G93.1 Hypoksisk/anoksisk hjerneskade
+* R40 Koma/nedsatt bevissthet
+* C71 Tumor/neoplasme i SNS
+* Annet 
+
+==== Sepsis
+* A39 Meningokokksepsis
+* A40 Streptokokksepsis
+* A41 Annen sepsis (inkl. uspesifisert)
+* R65.1 Alvorlig sepsis (SIRS, infeksiøs årsak, organsvikt)
+* R57.2 Septisk sjokk 
+
+==== Skade/traume
+* Hode, ansikt, hals
+* Hjerne/sentralnervesystemet
+* Kolumna
+* Thorax 
+* Abdomen
+* Bekken
+* Ekstremiteter
+* Annet
+
+
+* Penetrerende skade
+* Ikke-penetrerende skade
+* Trafikkskade
+* Annet
+
+==== Metabolsk/intoksikasjon
+* E10.0 Coma diabeticum (inkl. hypoglykemisk koma)
+* E86 Væsketap (dehydrering, hypovolemi etc)
+* E87 Andre forstyrrelser i væske-, elektrolytt- og syre-base- balanse
+* T4n Forgiftning med terapeutiske legemidler og biologiske substanser
+
+==== Hematologisk svikt
+* Lymfom
+* Leukemi
+* Neutropeni/trombocytopeni/pancytopeni
+* Annet
+
+==== Nyresvikt
+* N99.0 Nyresvikt etter kirurgiske og medisinske prosedyrer/postoperativ nyresvikt
+* N17 Akutt nyresvikt
+* N18 Kronisk nyresvikt
+* Annet 
+
+==== Postoperativt
+* T88 Anestesikomplikasjon
+* T81 Komplikasjoner til kirurgiske og medisinske prosedyrer
+* Annet 
+
+
+
+:imagesdir: images
+
+== OpenEHR ressurser for Norsk Intensivregister 
+
+
+
+=== Arketyper 
+
+* http://arketyper.no/ckm/#showArchetype_1078.36.1692[SOFA]
+* http://arketyper.no/ckm/#showArchetype_1078.36.1685[SAPS]
+* http://arketyper.no/ckm/#showArchetype_1078.36.1668[NEMS]
+* http://arketyper.no/ckm/#showArchetype_1078.36.1693[PaO2-FiO2 ratioer]
+* http://arketyper.no/ckm/#showArchetype_1078.36.1713[PIM3 Score]
+* http://arketyper.no/ckm/#showArchetype_1078.36.1688[Ventilation support]
+
+==== SAPS Score 
+
+Konseptbeskrivelse:: Simplified Acute Physiology Score II (SAPS II) er et skåringssystem for fastsettelse av alvorlighetsgrad ved sykdom.
+
+Formål:: Skåringssystemet SAPS II (Simplified Acute Physiology Score II) benyttes for fastsettelse av alvorlighetsgrad og sannsynlighet for død ved sykehusopphold.
+
+	
+SAPS II benytter seg av 17 variabler – alder, type innleggelse (planlagt kirurgisk, øyeblikkelig hjelp-kirurgi og ikke-operativ), 12 fysiologiske eller biokjemiske variabler, samt tre variabler for underliggende kronisk sykdom (AIDS, cancer med metastaser, hematologisk malign sykdom).
+
+Selve skåringen gjøres kun én gang for hver pasient på basis av registrerte observasjoner i de første 24 timene av oppholdet i intensivavdelingen. De mest avvikende resultatene i løpet av denne perioden registreres. Til hver variabel tillegges angitte poeng, og den samlede poengsum utgjør en score som igjen konverteres til en sannsynlighet for død under sykehusoppholdet.
+
+image::saps_score_mindmap.png[]
+
+==== NEMS Score 
+
+Konseptbeskrivelse:: Nine Equivalents of Nursing Manpower Use Score (NEMS) benyttes for måling av ressursbruk ved intensiv- og postoperativavdelinger.
+
+Formål:: For å registrere en skåring av ressursbruk ved intensiv- og postoperativavdelinger.
+
+Brukes for å registrere en skåring av ressursbruk ved intensiv- og postoperativavdelinger. 
+
+NEMS skåres vanligvis av sykepleier og skåringen skal gjøres en gang per døgn. Skåringen gjennomføres per pasient ved å besvare syv spørsmål. Svarene gir ulik poengverdi og oppsummeres i en samlet NEMS-score, hvor høy skår indikerer høy ressursbruk.
+
+image::nems_score_mindmap.png[]
+
+==== SOFA Score 
+
+
+image::sofa_arena_form.png[]
+
+=== Regler 
+
+==== GDL 
+
+* https://github.com/gdl-lang/common-clinical-models/blob/master/guidelines/SOFA.v1.gdl[SOFA.v1.gdl]
+
+image::gdl_sofa_definitions.png[]
