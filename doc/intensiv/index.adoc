@@ -22,6 +22,11 @@ Norsk intensivregister har tre hovedformål:
 * Registeret kan også på nærmere vilkår gi grunnlag for forskning med behandling av pasienter ved intensivenheter som emne
 
 
+== Intensivoppholdet med fokus på rapportering til Norsk Intensiv registrering 
+
+Innleggelse 
+
+
 == Inklusjonskriterier
 
 Ikke alle opphold ved intensivenhet skal meldes inn. Registerpopulasjonen er alle intensivpasienter som oppfyller _minst ett av følgende kriterier_:
