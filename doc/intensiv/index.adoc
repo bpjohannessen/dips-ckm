@@ -1,0 +1,65 @@
+= Intensiv og intensivrapportering 
+
+== Bakgrunn
+DIPS Arena leveres med en egen modul for registrering av data og rapportering av disse til Norsk Intensivregister. I dette notatet beskrives denne løsningen. Fokuset er å få frem en god beskrivelse av Informasjonsmodellen gjennom openEHR arketyper.
+
+
+== Norsk Intensivregister 
+
+https://www.kvalitetsregistre.no/registers/norsk-intensivregister[Norsk Intensivregister]
+
+Intensivpasienter er kritisk syke og skadde pasienter som får overvåkning og behandling i egne sykehusenheter med spesialisert utstyr og spesialutdannet personale. Svikt i puste- og lungefunksjon, blodsirkulasjon og nervesystemets funksjon er sammen med alvorlige infeksjoner og større skader noen vanlige årsaker til intensivbehandling.
+
+Totalt rapporteres det fra om lag 16 000 intensivopphold årlig i Norge.
+
+=== Formål
+Norsk intensivregister har tre hovedformål:
+
+* Registeret skal utarbeide faglige kvalitetsindikatorer for virksomheten i norske intensivenheter
+* Registeret skal gi grunnlag for årlig rapport tilbake til deltagende sykehus og til sentrale helsemyndigheter om virksomheten ved norske intensivenheter
+* Registeret kan også på nærmere vilkår gi grunnlag for forskning med behandling av pasienter ved intensivenheter som emne
+
+
+== Inklusjonskriterier
+
+Ikke alle opphold ved intensivenhet skal meldes inn. Registerpopulasjonen er alle intensivpasienter som oppfyller _minst ett av følgende kriterier_:
+
+. Administrative
+.. Liggetid > 24 timer på intensiv/i overvåkningsarealet, der det er reellt behov for intensivbehandling/intensivovervåkning
+.. Overflytting til annen intensivenhet i løpet av de første 24 timer
+
+. Klinisk
+.. Død på intensiv
+.. Mekanisk respirasjonsstøtte (pustehjelp)
+.. Kontinuerlig infusjon av blodtrykksregulerende medisin
+
+
+
+== Hva blir registrert?
+
+. Administrativt 
+.. Innleggelses- og utskrivningstidspunkt på intensiv – liggetid på intensiv blir beregnet ut fra disse
+.. Om det er reinnleggelser (flere påfølgende intensivopphold)
+.. Om pasienten er overført til/fra andre intensivavsnitt og årsaken til overføringen
+.. Overlevelse
+.. For de pasientene som dør under intensivoppholdet, blir det registrert hvorvidt de var aktuelle som organdonores.
+
+. Klinisk 
+.. Hovedårsak til intensivoppholdet 
+... En av 11 kategorier (svikt i pustefunksjon, blodsirkulasjon, sentralnervesystemet, nyrefunksjon, skade etc.)
+.. Om det er gitt respirasjonsstøtte
+... Hvor lenge og hvilken type støtte
+.. Hvorvidt man under intensivoppholdet har brukt 
+... Nyreerstattende behandling
+... Pustehull på halsen (trakeostomi)
+... Avansert overvåkning av blodsirkulasjonen
+... Mer sjeldne tiltak som måling av trykk i hodet og annen avansert overvåkning av hjerne, isolering (smitteforbyggende), hjertelungemaskin, nedkjøling og bukleie.
+... WARNING: Hvor kommer disse prosedyrene fra?
+.. Om pasienten er operert eller ikke
+
+.. Alvorlighetskåre 
+... Over 16 år : Alvorlighetsskåre (SAPS II) (for pasienter > 16 år) som inneholder skåring av et definert utvalg av fysiologiske variabler (f. eks. temperatur, puls og blodtrykk) og biokjemiske verdier (saltinnhold i blodet, hvite blodlegemer etc.).
+... Under 16 år: For barn (<16 år) tilsvarende skåre (PIM), med færre målinger og mer vekt på bakgrunnsinformasjon (hovedårsak til innleggelsen, aktuell sykdom etc.).
+.. Organsviktskåre (SOFA) for voksne 
+... Tallverdier for å beskrive forstyrrelser i pustefunksjon, blodsirkulasjon, leverfunksjon, beinmargsfunksjon, nyrefunksjon og sentralnervesystem
+.. De mest relevante diagnosekodene for intensivoppholdet (ICD-10)
