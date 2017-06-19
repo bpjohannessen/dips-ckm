@@ -47,14 +47,16 @@ Ikke alle opphold ved intensivenhet skal meldes inn. Registerpopulasjonen er all
 . Klinisk 
 .. Hovedårsak til intensivoppholdet 
 ... En av 11 kategorier (svikt i pustefunksjon, blodsirkulasjon, sentralnervesystemet, nyrefunksjon, skade etc.)
+
 .. Om det er gitt respirasjonsstøtte
 ... Hvor lenge og hvilken type støtte
+
 .. Hvorvidt man under intensivoppholdet har brukt 
 ... Nyreerstattende behandling
 ... Pustehull på halsen (trakeostomi)
 ... Avansert overvåkning av blodsirkulasjonen
 ... Mer sjeldne tiltak som måling av trykk i hodet og annen avansert overvåkning av hjerne, isolering (smitteforbyggende), hjertelungemaskin, nedkjøling og bukleie.
-... WARNING: Hvor kommer disse prosedyrene fra?
+
 .. Om pasienten er operert eller ikke
 
 .. Alvorlighetskåre 
@@ -63,3 +65,193 @@ Ikke alle opphold ved intensivenhet skal meldes inn. Registerpopulasjonen er all
 .. Organsviktskåre (SOFA) for voksne 
 ... Tallverdier for å beskrive forstyrrelser i pustefunksjon, blodsirkulasjon, leverfunksjon, beinmargsfunksjon, nyrefunksjon og sentralnervesystem
 .. De mest relevante diagnosekodene for intensivoppholdet (ICD-10)
+
+== Administrative registreringer
+De administrative registreringene omhandler tidsmessige registeringer av opphold på intensiv. Konkret ønsker man informasjon om: 
+
+== SAPS II-skåring (første 24 timer)
+
+Kilde: https://helse-bergen.no/seksjon/intensivregister/Documents/MRS%20-%20reg.%20av%20int.opphold%20i%20NIR/SAPS%20II-sk%C3%A5ring%20av%20intensivopphold.pdf[PDF]
+
+Denne skåringen gjøres kun for pasienter som er fylt 16 år- 
+
+|===
+|Hva | Score 
+|Kroniske sykdommer| AIDS / hematologisk malignitet / metastatisk cancer / ingen
+|Glasgow Coma Scale (GCS) (3-15) |
+|Alder (automatisk)|
+|Systolisk blodtrykk|
+|Pulsfrekvens|
+|Temperatur |
+|Respirasjonsstøtte/CPAP |
+|PaO2/FiO2–ratio (kPa) |første 24 t og kun ved respirasjonsstøtte
+|Urinproduksjon/24 timer (mL) |
+|S-karbamid (mmol/L) |
+|Leukocytter (x109/L) |
+|S-kalium (mmol/L) |
+|S-natrium (mmol/L)|
+|S- HCO3 (mmol/L) |
+|S-bilirubin (µmol/L)|
+|=== 
+
+=== Type innleggelse – (SAPS II innleggelseskategorier)
+
+For å unngå misforståelser og ulik rapporteringspraksis, holder vi oss strengt til definisjonene (fra SAPS II) og tar bare hensyn til om pasienten er operert planlagt, akutt eller ikke er operert siste 7 døgn før innleggelse på intensiv, uavhengig av moderavdeling og ev. «kirurgiske» diagnoser.
+
+Hvis flere operasjoner siste uke, gjelder siste. Ved f. eks. elektiv operasjon 5 dager før intensiv og akuttoperasjon dagen før pasienten blir overført intensiv, skal det skåres som etter akutt operasjon i SAPS II (I ICIP er dette «ikke planlagt kirurgisk inngrep»).
+
+[cols="1,5"]
+|=== 
+|Score | Beskrivelse
+|0 | etter planlagt operasjon (til intensiv etter elektiv operasjon i løpet av de siste 7 døgn)
+|1 | akutt non-operativ (til intensiv uten forutgående operasjon de siste 7 døgn)
+|2 | etter akutt operasjon (til intensiv etter akutt operasjon i løpet av de siste 7 døgn)
+|===
+
+*Invasive radiologiske prosedyrer* (punksjoner, drensinnleggelse o.l.) og invasiv kardiologi (f.eks. PCI) blir ikke regnet som operasjon.
+
+*Diagnostiske prosedyrer* (skopier etc.) blir ikke regnet som operasjon, selv om pasienten skulle trenge intubasjon/anestesi.
+
+*Invasive prosedyrer med terapeutiske tiltak* (sklerosering av øsofagusvaricer, stenting av aortaaneurisme etc.) blir regnet som operasjon (akutt eller planlagt).
+
+==== Eksempler
+|===
+|Beskrivelse | Score 
+|Pasient til intensiv med pneumoni 4 døgn etter elektiv gastrektomi| 0=etter planlagt operasjon
+|Multitraumepasient med miltruptur og stabile frakturer, pasienten er ikke operert: | 1=akutt non-operativ 
+|Pasient til intensiv med multiorgansvikt på bakgrunn av pankreatitt, pasienten er ikke operert |1=akutt non-operativ
+|Ustabil pasient til intensiv for nødvendig stabilisering/oppvæsking før reoperasjon for anastomoselekkasje etter tarmoperasjon for 8 døgn siden, ikke operert i mellomtiden: |1=akutt non-operativ footnote:[En slik pasient trenger intensivbehandling/-overvåkning før operasjon]
+|=== 
+
+==== Viktig for korrekt SAPS II-skåring
+
+. SAPS II skal bare skåres på pasienter som er >16 år ved innleggelse på intensiv
+. Det er bare verdier de første 24 t av intensivoppholdet, fra det tidspunkt pasienten fysisk befinner seg på intensiv/i overvåkingsarealet, som skal være grunnlag for skåren. 
+.. Man skal skåre med utgangspunkt i verdier fra hele første døgn ved opphold >24 t, og skal altså ikke skåre SAPS II før det er gått 24 t. 
+.. Unntaket er Glasgow Coma Scale (GCS), der man kan skåre ut fra opplysninger man måtte ha på forhånd (f. eks. før intubasjon på et skadested). På sederte pasienter skal GCS ta utgangspunkt i skåre før terapeutisk intervensjon (en våken, men respiratorisk utslitt pasient som må sederes og intuberes før overføring til intensiv, skal altså ha GCS=15). Styringsgruppen tilrår at man setter GCS til 3 ved kjøling av pasient som har hatt hjertestans utenfor sykehus.
+
+. Dersom pasienten er utskrevet eller overflyttet annen intensivenhet innen 24 t, skal man bruke de verdier man faktisk har for oppholdet.
+. For pasienter som dør innen 24 t, skal man ikke bruke «terminale» verdier, men verdier registrert like etter innleggelsestidspunktet på intensiv.
+. PaO2/FiO2-ratio skal bare fylles ut dersom pasienten har fått respirasjonsstøtte (CPAP/NIV eller mer) første 24 timer etter innleggelse. Man skal registrere laveste PaO2/FiO2-ratio, dvs. de målingene som er gjort samtidig og gir lavest ratio. Laveste PaO2 registrert er dermed ikke nødvendigvis den som skal brukes, det kommer an på FiO2.
+. NB! Alle reinnleggelser på intensiv skal skåres med SAPS. Dette for at alle data for overlevelse/død skal kunne knyttes opp mot et opphold det er SAPS-skåre for. SAPS-skåre ved reinnleggelse kan være svært ulik SAPS-skåre ved tidligere intensivopphold. 
+
+== Spesifikasjon av NEMS-skåring i Norsk Intensivregister (revidert desember 2016).
+
+Kilde: https://helse-bergen.no/seksjon/intensivregister/Documents/Mal%20for%20data/NEMS%20NIR%20des.%202016.pdf[PDF]
+
+[cols="^1,5,8,^4,5"]
+|===
+|#|Benevnelse| Merknader| Poeng| NB!
+
+|1 
+|Basis-monitorering
+|Regelmessig monitorering av vitale funksjoner 
+|9 poeng
+|
+
+|2 
+|Intravenøs medikasjon
+|Bolus eller kontinuerlig 
+|6 poeng
+|
+
+|3 
+|Mekanisk ventilasjonsstøtte
+|Alle metoder som gir positivt luftveistrykk, invasivt eller noninvasivt. Ikke Optiflow.
+|12 poeng 
+|Det gis ikke poeng for 3 og 4 samtidig på samme døgn
+
+|4
+|Annen ventilasjonshjelp
+|Oksygentilskudd uansett metode (brillekateter, maske) Optiflow. Spontanventilasjon via oral, nasal eller tracheostomitube, med eller uten oksygen
+|3 poeng
+|
+
+|5
+|Enkel vasoaktiv medikamentinfusjon
+|Kontinuerlig infusjon av hvilket som helst vasoaktivt medikament. Det skal ikke skåres for clonidin som vasoaktivt medikament hvis indikasjonen er abstinenes
+|7 poeng 
+|Det gis ikke poeng for 5 og 6 samtidig på samme døgn
+
+|6
+|Flere vasoaktive medikamentinfusjoner
+|To eller flere vasoaktive medikamentinfusjoner. Ellers som for punkt 5.
+|12 poeng
+|
+
+|7 
+|Dialyse Nyreerstattende behandling. Alle metoder.
+|
+|6 poeng
+|
+
+|8
+|Spesifikke intervensjoner på intensiv
+|Eksempler: intubering, pleuratapping, bronkoskopi, gastroskopi, elektrokonvertering, endoskopier, vending i bukleie, forberedelse til organdonasjon, dilatasjonstracheostomi, rescusitering, operative inngrep utført på intensiv, terapeutisk hypotermi/TTM, isolasjon av pasient, mobilisering som krever mer enn en sykepleier, omfattende sårskift og omfattende pårørendeoppfølging. 
+
+Røntgen thorax, ECCO, EKG, fysioterapi, ordinære sårskift, suging, innleggelse av arteriekateter og sentralt venekateter inkluderes ikke.
+|5 poeng
+|Om det utføres flere enn en slik prosedyre hvert døgn gis likevel kun poeng en gang!
+
+|9
+|Spesifikke intervensjoner utenfor intensiv
+|Alle prosedyrer som medfører flytting av pasienten utenfor intensivavsnittet
+|6 poeng 
+|Om det utføres flere enn en slik prosedyre hvert døgn gis likevel kun poeng en gang!
+
+|===
+
+CAUTION: Maksimalt antall poeng for et døgn 56 p
+
+== SOFA
+!===
+|Grad |Sirkulasjon| Respirasjon| Nyrefunksjon| SNS |Koagulasjon| Lever
+| 
+|MAP og vasopressor
+|PaO2/FiO2 ratio (kPa)
+|Kreatinin/DU µmol/l & ml
+|GCS 
+|TPK x 103/µl
+|Bilirubin µmol/l
+
+|0
+|MAP ≥ 70
+|>53 
+|<110 
+|15
+|> 150
+|<20
+
+|1
+|MAP < 70
+|39,9-53
+|110-170
+|13-14
+|< 150
+|20-32
+
+|2
+|DA ≤ 5;Dobutamin
+|26,6 – 39,8
+|171-299
+|10-12
+|< 100
+|33-101
+
+|3 
+|DA > 5;NA/A ≤ 0,1
+|13,3 – 26,5
+|300-440 < 500 ml/24t
+|6-9 
+|< 50 
+|102-204
+
+|4
+|NA/A > 0,1
+|< 13,3
+|>440 < 200 ml/24t
+|<6 
+|< 20
+|>204 
+
+|====
