@@ -40,7 +40,8 @@ Ikke alle opphold ved intensivenhet skal meldes inn. Registerpopulasjonen er all
 == Hva blir registrert?
 
 . Administrativt 
-.. Innleggelses- og utskrivningstidspunkt på intensiv – liggetid på intensiv blir beregnet ut fra disse
+.. Innleggelses- og utskrivningstidspunkt på intensiv
+... Liggetid på intensiv blir beregnet ut fra disse
 .. Om det er reinnleggelser (flere påfølgende intensivopphold)
 .. Om pasienten er overført til/fra andre intensivavsnitt og årsaken til overføringen
 .. Overlevelse
@@ -71,14 +72,17 @@ Ikke alle opphold ved intensivenhet skal meldes inn. Registerpopulasjonen er all
 == Administrative registreringer
 De administrative registreringene omhandler tidsmessige registeringer av opphold på intensiv. Konkret ønsker man informasjon om: 
 
+TIP: TODO skrive ut dette 
+
 == SAPS II-skåring (første 24 timer)
 
 Kilde: https://helse-bergen.no/seksjon/intensivregister/Documents/MRS%20-%20reg.%20av%20int.opphold%20i%20NIR/SAPS%20II-sk%C3%A5ring%20av%20intensivopphold.pdf[PDF]
 
-Denne skåringen gjøres kun for pasienter som er fylt 16 år- 
+CAUTION: Denne skåringen gjøres kun for pasienter som er fylt 16 år. 
 
+[cols="3,5", options="header"]
 |===
-|Hva | Score 
+|Hva | Kommentar
 |Kroniske sykdommer| AIDS / hematologisk malignitet / metastatisk cancer / ingen
 |Glasgow Coma Scale (GCS) (3-15) |
 |Alder (automatisk)|
@@ -102,7 +106,7 @@ For å unngå misforståelser og ulik rapporteringspraksis, holder vi oss streng
 
 Hvis flere operasjoner siste uke, gjelder siste. Ved f. eks. elektiv operasjon 5 dager før intensiv og akuttoperasjon dagen før pasienten blir overført intensiv, skal det skåres som etter akutt operasjon i SAPS II (I ICIP er dette «ikke planlagt kirurgisk inngrep»).
 
-[cols="1,5"]
+[cols="1,5", options="header"]
 |=== 
 |Score | Beskrivelse
 |0 | etter planlagt operasjon (til intensiv etter elektiv operasjon i løpet av de siste 7 døgn)
@@ -117,6 +121,7 @@ Hvis flere operasjoner siste uke, gjelder siste. Ved f. eks. elektiv operasjon 5
 *Invasive prosedyrer med terapeutiske tiltak* (sklerosering av øsofagusvaricer, stenting av aortaaneurisme etc.) blir regnet som operasjon (akutt eller planlagt).
 
 ==== Eksempler
+[options="header"]
 |===
 |Beskrivelse | Score 
 |Pasient til intensiv med pneumoni 4 døgn etter elektiv gastrektomi| 0=etter planlagt operasjon
@@ -141,7 +146,7 @@ Hvis flere operasjoner siste uke, gjelder siste. Ved f. eks. elektiv operasjon 5
 
 Kilde: https://helse-bergen.no/seksjon/intensivregister/Documents/Mal%20for%20data/NEMS%20NIR%20des.%202016.pdf[PDF]
 
-[cols="^1,5,8,^4,5"]
+[cols="^1,5,8,^4,5", options="header"]
 |===
 |#|Benevnelse| Merknader| Poeng| NB!
 
@@ -206,6 +211,8 @@ Røntgen thorax, ECCO, EKG, fysioterapi, ordinære sårskift, suging, innleggels
 CAUTION: Maksimalt antall poeng for et døgn 56 p
 
 == SOFA
+
+[options="header"]
 |===
 |Grad |Sirkulasjon footnote:[Alle doser gitt i µg/kg/min, DA= Dopamin, NA=Noradrenalin, A=Adrenalin ]| Respirasjon footnote:[3 eller 4 poeng bare for pasienter på respirator (NIV+IPPV)]| Nyrefunksjon| SNS |Koagulasjon| Lever
 | 
@@ -408,23 +415,18 @@ Når man har gjort et valg av primærårsak, og ev. sekundærårsak, vil det for
 * T81 Komplikasjoner til kirurgiske og medisinske prosedyrer
 * Annet 
 
-
-
-:imagesdir: images
-
 == OpenEHR ressurser for Norsk Intensivregister 
-
-
 
 === Arketyper 
 
-* http://arketyper.no/ckm/#showArchetype_1078.36.1692[SOFA]
 * http://arketyper.no/ckm/#showArchetype_1078.36.1685[SAPS]
 * http://arketyper.no/ckm/#showArchetype_1078.36.1668[NEMS]
-* http://arketyper.no/ckm/#showArchetype_1078.36.1693[PaO2-FiO2 ratioer]
+* http://arketyper.no/ckm/#showArchetype_1078.36.1692[SOFA]
 * http://arketyper.no/ckm/#showArchetype_1078.36.1713[PIM3 Score]
+* http://arketyper.no/ckm/#showArchetype_1078.36.1693[PaO2-FiO2 ratioer]
 * http://arketyper.no/ckm/#showArchetype_1078.36.1688[Ventilation support]
 
+[[SAPS_SCORE]]
 ==== SAPS Score 
 
 Konseptbeskrivelse:: Simplified Acute Physiology Score II (SAPS II) er et skåringssystem for fastsettelse av alvorlighetsgrad ved sykdom.
@@ -438,15 +440,14 @@ Selve skåringen gjøres kun én gang for hver pasient på basis av registrerte 
 
 image::saps_score_mindmap.png[]
 
+[[NEMS_SCORE]]
 ==== NEMS Score 
 
 Konseptbeskrivelse:: Nine Equivalents of Nursing Manpower Use Score (NEMS) benyttes for måling av ressursbruk ved intensiv- og postoperativavdelinger.
 
 Formål:: For å registrere en skåring av ressursbruk ved intensiv- og postoperativavdelinger.
 
-Brukes for å registrere en skåring av ressursbruk ved intensiv- og postoperativavdelinger. 
-
-NEMS skåres vanligvis av sykepleier og skåringen skal gjøres en gang per døgn. Skåringen gjennomføres per pasient ved å besvare syv spørsmål. Svarene gir ulik poengverdi og oppsummeres i en samlet NEMS-score, hvor høy skår indikerer høy ressursbruk.
+Bruk:: NEMS skåres vanligvis av sykepleier og skåringen skal gjøres en gang per døgn. Skåringen gjennomføres per pasient ved å besvare syv spørsmål. Svarene gir ulik poengverdi og oppsummeres i en samlet NEMS-score. Høy skår indikerer høy ressursbruk.
 
 image::nems_score_mindmap.png[]
 
@@ -454,6 +455,56 @@ image::nems_score_mindmap.png[]
 
 
 image::sofa_arena_form.png[]
+
+[[PIM3_SCORE]]
+==== PIM3 Score 
+
+[cols="1,10"]
+|===
+| |
+|Konseptbeskrivelse | Pediatric index of mortality (PIM) 3 score er et skåringsverktøy for å estimere sannsynligheten for død for barn har behov for intensivbehandling.
+
+|Formål|Skåringsområdene og skåringsverdiene for parameterne i PIM3 score er iht. Norsk Intensivregisters (NIRs) spesifikasjon av 09.11.2016 for XML-meldingen av intensivpasienter til NIR.
+
+|Bruk 
+|Observasjonene som registreres skal være gjort ved eller omkring tidspunktet for første møte ansikt til ansikt, dvs. ikke telefonisk, mellom pasienten og en lege fra intensivenheten eller en lege fra et spesialisert barnetransportteam.
+
+Det er den første målte verdien for hver enkelt parameter fra første kontakt til én time etter ankomst til intensivenheten. Den første kontakten kan være i intensivenheten, i akuttmottaket, på sengepost på eget sykehus eller annet sykehus ved f.eks. henteoppdrag.
+
+* <<formel_pim3_score, Formel PIM3 Score>>
+* <<formel_prop_death, Formel for sannsynlighet for død>>
+
+|===
+
+
+[[formel_pim3_score]]
+.Formel PIM3 score
+[source]
+----
+  (konstant for pupillereaksjon × score for pupillereaksjon)
++ (konstant for elektiv innleggelse × score for elektiv innleggelse)
++ (konstant for mekanisk ventilasjon × score for mekanisk ventilasjon)
++ (konstant for base excess × absoluttverdi av base excess)
++ (konstant for SBT × SBT) 
++ (konstant for SBT2 × [SBP2/1000]) 
++ (konstant for FiO2/PaO2 × [{FiO2 × 100}/PaO2]) 
+− (konstant for hjerteprosedyre med hjerte-lungemaskin × score for hjerteprosedyre med hjerte-lungemaskin) 
+− (konstant for hjerteprosedyre uten hjerte-lungemaskin × score for hjerteprosedyre uten hjerte-lungemaskin)
+− (konstant for ikke hjerterelatert prosedyre × score for ikke hjerterelatert prosedyre) 
++ (konstant for svært høy risiko diagnose × score for svært høy risiko diagnose) 
++ (konstant for høy risiko diagnose × score for høy risiko diagnose) 
+− (konstant for lav risiko diagnose × score for lav risiko diagnose)
+− konstant for PIM3 score.
+----
+
+[[formel_prop_death]]
+.Formel for sannsylighet for død 
+[source]
+----
+exp(PIM3 score)/[1 + exp (PIM3 score)].
+----
+
+
 
 === Regler 
 
