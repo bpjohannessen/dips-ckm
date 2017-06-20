@@ -8,7 +8,8 @@ DIPS Arena leveres med en egen modul for registrering av data og rapportering av
 
 == Norsk Intensivregister 
 
-https://www.kvalitetsregistre.no/registers/norsk-intensivregister[Norsk Intensivregister]
+* https://www.kvalitetsregistre.no/registers/norsk-intensivregister[Norsk Intensivregister]
+* https://helse-bergen.no/norsk-intensivregister-nir/registrering-av-data-i-nir-kun-for-medlemmer[Registrering av data i nir kun for medlemmer]
 
 Intensivpasienter er kritisk syke og skadde pasienter som får overvåkning og behandling i egne sykehusenheter med spesialisert utstyr og spesialutdannet personale. Svikt i puste- og lungefunksjon, blodsirkulasjon og nervesystemets funksjon er sammen med alvorlige infeksjoner og større skader noen vanlige årsaker til intensivbehandling.
 
@@ -31,48 +32,67 @@ Innleggelse
 
 Ikke alle opphold ved intensivenhet skal meldes inn. Registerpopulasjonen er alle intensivpasienter som oppfyller _minst ett av følgende kriterier_:
 
-. Administrative
-.. Liggetid > 24 timer på intensiv/i overvåkningsarealet, der det er reellt behov for intensivbehandling/intensivovervåkning
-.. Overflytting til annen intensivenhet i løpet av de første 24 timer
+.Inklusjonskriterier Norsk Intensivregister
+[cols="^1m,1,5,5e" options="header"]
+|=== 
+| # |Type | Beskrivelse | Merknad
+|1| Administrativ | Har pasienten ligget > 24t i intensivenhet?
+|Liggetid > 24 timer på intensiv/i overvåkningsarealet, der det er reellt behov for intensivbehandling/intensivovervåkning
 
-. Klinisk
-.. Død på intensiv
-.. Mekanisk respirasjonsstøtte (pustehjelp)
-.. Kontinuerlig infusjon av blodtrykksregulerende medisin
+Observasjonspasienter som ligger over 24 timer, og som ikke mottar intensivbehandling eller trenger intensivovervåkning, skal ikke registreres i NIR.
+
+Hos disse er svaret selvsagt «Nei» på punkt 2.-5.). Dette vil typisk gjelde medisinske observasjonspasienter som på kort varsel kan overflyttes vanlig sengepost, eller stabile og ukompliserte postoperative pasienter som blir liggende > 24 t uten at det er en medisinsk grunn til det.
+
+|2|Administrativ| Ble pasienten overflyttettil annen intensivenhet i løpet av de første 24t? 
+|På eget eller annet sykehus
+
+|3|Klinisk|Døde pasienten i løpet av de første 24t på intensiv?
+|
+|4|Klinisk|Har pasienten fått mekanisk respirasjonsstøtte noen gang i løpet av hele oppholdet?
+
+(CPAP/maskeventilasjon/overtrykksventilasjon)
+|Respirasjonsstøtte gjelder noen gang i løpet av hele intensivoppholdet
+
+
+|5|Klinisk| Har pasienten fått vasoaktiv infusjon under oppholdet?
+|Vasoaktiv infusjon er infusjon av medikament som har som hovedeffekt/indikasjon å endre hemodynamikk/sirkulasjon (som for eksempel Adrenalin, Noradrenalin, 
+|===
 
 
 
 == Hva blir registrert?
 
-. Administrativt 
-.. Innleggelses- og utskrivningstidspunkt på intensiv
-... Liggetid på intensiv blir beregnet ut fra disse
-.. Om det er reinnleggelser (flere påfølgende intensivopphold)
-.. Om pasienten er overført til/fra andre intensivavsnitt og årsaken til overføringen
-.. Overlevelse
-.. For de pasientene som dør under intensivoppholdet, blir det registrert hvorvidt de var aktuelle som organdonores.
+[cols="1,1,10a", options="header"]
+|===
+|#|Type|Beskrivelse 
+|1|Adm.|Innleggelses- og utskrivningstidspunkt på intensiv. 
+Liggetid på intensiv blir beregnet ut fra disse
+|2|Adm.| Om det er reinnleggelser (flere påfølgende intensivopphold)
+|3|Adm.| Om pasienten er overført til/fra andre intensivavsnitt og årsaken til overføringen
+|4|Adm.| Overlevelse. For de pasientene som dør under intensivoppholdet, blir det registrert hvorvidt de var aktuelle som organdonores.
+|5|Klinisk|Hovedårsak til intensivoppholdet .
 
-. Klinisk 
-.. Hovedårsak til intensivoppholdet 
-... En av 11 kategorier (svikt i pustefunksjon, blodsirkulasjon, sentralnervesystemet, nyrefunksjon, skade etc.)
+En av 11 kategorier (svikt i pustefunksjon, blodsirkulasjon, sentralnervesystemet, nyrefunksjon, skade etc.)
 
-.. Om det er gitt respirasjonsstøtte
-... Hvor lenge og hvilken type støtte
+|6|Klinisk| Om det er gitt respirasjonsstøtte. Hvor lenge og hvilken type støtte
+|7|Klinisk|Hvorvidt man under intensivoppholdet har brukt:
 
-.. Hvorvidt man under intensivoppholdet har brukt 
-... Nyreerstattende behandling
-... Pustehull på halsen (trakeostomi)
-... Avansert overvåkning av blodsirkulasjonen
-... Mer sjeldne tiltak som måling av trykk i hodet og annen avansert overvåkning av hjerne, isolering (smitteforbyggende), hjertelungemaskin, nedkjøling og bukleie.
+* Nyreerstattende behandling
+* Pustehull på halsen (trakeostomi)
+* Avansert overvåkning av blodsirkulasjonen
+* Mer sjeldne tiltak som måling av trykk i hodet og annen avansert overvåkning av hjerne, isolering (smitteforbyggende), hjertelungemaskin, nedkjøling og bukleie.
 
-.. Om pasienten er operert eller ikke
+|8|Klinisk|Om pasienten er operert eller ikke
+|9|Klinisk|Alvorlighetskåre 
 
-.. Alvorlighetskåre 
-... Over 16 år : Alvorlighetsskåre (SAPS II) (for pasienter > 16 år) som inneholder skåring av et definert utvalg av fysiologiske variabler (f. eks. temperatur, puls og blodtrykk) og biokjemiske verdier (saltinnhold i blodet, hvite blodlegemer etc.).
-... Under 16 år: For barn (<16 år) tilsvarende skåre (PIM), med færre målinger og mer vekt på bakgrunnsinformasjon (hovedårsak til innleggelsen, aktuell sykdom etc.).
-.. Organsviktskåre (SOFA) for voksne 
-... Tallverdier for å beskrive forstyrrelser i pustefunksjon, blodsirkulasjon, leverfunksjon, beinmargsfunksjon, nyrefunksjon og sentralnervesystem
-.. De mest relevante diagnosekodene for intensivoppholdet (ICD-10)
+* Over 16 år : Alvorlighetsskåre (<<SAPS_SCORE,SAPS II>>) som inneholder skåring av et definert utvalg av fysiologiske variabler (f. eks. temperatur, puls og blodtrykk) og biokjemiske verdier (saltinnhold i blodet, hvite blodlegemer etc.).
+* Under 16 år: <<PIM3_SCORE,PIM3>> som har færre målinger og mer vekt på bakgrunnsinformasjon (hovedårsak til innleggelsen, aktuell sykdom etc.).
+
+|10|Klinisk|<<SOFA_SCORE,Organsviktskåre (SOFA)>> for voksne. 
+
+Tallverdier for å beskrive forstyrrelser i pustefunksjon, blodsirkulasjon, leverfunksjon, beinmargsfunksjon, nyrefunksjon og sentralnervesystem.
+|11|Klinisk|De mest relevante diagnosekodene for intensivoppholdet (ICD-10)
+|===
 
 == Administrative registreringer
 De administrative registreringene omhandler tidsmessige registeringer av opphold på intensiv. Konkret ønsker man informasjon om: 
@@ -456,6 +476,7 @@ Bruk:: NEMS skåres vanligvis av sykepleier og skåringen skal gjøres en gang p
 
 image::nems_score_mindmap.png[]
 
+[[SOFA_SCORE]]
 ==== SOFA Score 
 
 
