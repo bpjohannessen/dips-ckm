@@ -1,0 +1,11 @@
+NIR_REASON_ADMITTED::1::Respiratorisk svikt
+NIR_REASON_ADMITTED::2::Sirkulatorisk/kardiovaskulær svikt
+NIR_REASON_ADMITTED::3::Gastroenterologisk svikt
+NIR_REASON_ADMITTED::4::Nevrologisk svikt
+NIR_REASON_ADMITTED::5::Sepsis
+NIR_REASON_ADMITTED::6::Skade/traume
+NIR_REASON_ADMITTED::7::Metabolsk/intoksikasjon
+NIR_REASON_ADMITTED::8::Hematologisk svikt
+NIR_REASON_ADMITTED::9::Nyresvikt
+NIR_REASON_ADMITTED::10::Postoperativt
+NIR_REASON_ADMITTED::11::Annet

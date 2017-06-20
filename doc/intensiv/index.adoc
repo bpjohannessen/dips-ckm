@@ -10,6 +10,7 @@ DIPS Arena leveres med en egen modul for registrering av data og rapportering av
 
 * https://www.kvalitetsregistre.no/registers/norsk-intensivregister[Norsk Intensivregister]
 * https://helse-bergen.no/norsk-intensivregister-nir/registrering-av-data-i-nir-kun-for-medlemmer[Registrering av data i nir kun for medlemmer]
+* https://helse-bergen.no/seksjon/intensivregister/Documents/MRS%20-%20reg.%20av%20int.opphold%20i%20NIR/Kodebok%20MRS4%20.pdf[Kodebok]
 
 Intensivpasienter er kritisk syke og skadde pasienter som får overvåkning og behandling i egne sykehusenheter med spesialisert utstyr og spesialutdannet personale. Svikt i puste- og lungefunksjon, blodsirkulasjon og nervesystemets funksjon er sammen med alvorlige infeksjoner og større skader noen vanlige årsaker til intensivbehandling.
 
@@ -243,38 +244,20 @@ CAUTION: Maksimalt antall poeng for et døgn 56 p
 
 Årsak til innleggelse i intensivavdelingen (modifisert etter APACHE III)
 
+[[NIR_REASON_ADMITTED]]
 === Primærårsak til dette intensivoppholdet (vurdert av lege)
 
 Foreta ett valg mellom disse 11 kategoriene (obligatorisk) i nedtrekksmenyen
 
-1. Respiratorisk svikt
-2. Sirkulatorisk/kardiovaskulær svikt
-3. Gastroenterologisk svikt
-4. Nevrologisk svikt
-5. Sepsis
-6. Skade/traume
-7. Metabolsk/intoksikasjon
-8. Hematologisk svikt
-9. Nyresvikt
-10. Postoperativt
-11. Annet
+[source]
+----
+include::NIR_ReasonAdmitted.txt[]
+----
 
 === Sekundærårsak (ett valg – frivillig)
-1. Respiratorisk svikt
-2. Sirkulatorisk/kardiovaskulær svikt
-3. Gastroenterologisk svikt
-4. Nevrologisk svikt
-5. Sepsis
-6. Skade/traume
-7. Metabolsk/intoksikasjon
-8. Hematologisk svikt
-9. Nyresvikt
-10. Postoperativt
-11. Annet
+Her benyttes samme kodeverk som for primærårsak
 
 === Undergrupper for årsak (frivillig registrering) 
-
-
 Når man har gjort et valg av primærårsak, og ev. sekundærårsak, vil det for hvert valg komme opp en liste med noen utvalgte undergrupper/diagnoser for nærmere beskrivelse av årsaken: 
 
 ==== Respiratorisk svikt
@@ -501,7 +484,7 @@ image::sofa_arena_form.png[]
 |Formål|Skåringsområdene og skåringsverdiene for parameterne i PIM3 score er iht. Norsk Intensivregisters (NIRs) spesifikasjon av 09.11.2016 for XML-meldingen av intensivpasienter til NIR.
 
 |Bruk 
-|Observasjonene som registreres skal være gjort ved eller omkring tidspunktet for første møte ansikt til ansikt, dvs. ikke telefonisk, mellom pasienten og en lege fra intensivenheten eller en lege fra et spesialisert barnetransportteam.
+a|Observasjonene som registreres skal være gjort ved eller omkring tidspunktet for første møte ansikt til ansikt, dvs. ikke telefonisk, mellom pasienten og en lege fra intensivenheten eller en lege fra et spesialisert barnetransportteam.
 
 Det er den første målte verdien for hver enkelt parameter fra første kontakt til én time etter ankomst til intensivenheten. Den første kontakten kan være i intensivenheten, i akuttmottaket, på sengepost på eget sykehus eller annet sykehus ved f.eks. henteoppdrag.
 
