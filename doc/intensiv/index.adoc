@@ -249,6 +249,8 @@ CAUTION: Maksimalt antall poeng for et døgn 56 p
 
 Foreta ett valg mellom disse 11 kategoriene (obligatorisk) i nedtrekksmenyen
 
+link:NIR_ReasonAdmitted.txt[]
+
 [source]
 ----
 include::NIR_ReasonAdmitted.txt[]
