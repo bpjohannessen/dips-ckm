@@ -1,0 +1,63 @@
+﻿nir::102090::Akershus universitetssykehus AHUS
+nir::9998::Annet sykehus i Norge
+nir::108897::Diakonhjemmet sykehus AS
+nir::105282::Førde sentralsjukehus
+nir::100180::Haraldsplass Diakonale Sykehus AS
+nir::100273::Haugesund sjukehus Helse Fonna
+nir::112044::Haukeland universitetssykehus - Kir. Intensiv
+nir::106271::Haukeland universitetssykehus - KSK Postoperativ seksjon
+nir::105048::Haukeland universitetssykehus - Medisinsk intensiv MIO
+nir::107717::Haukeland universitetssykehus - Respiratorisk overvåkingsenhet ROE
+nir::109363::Haukeland universitetssykehus - Seksjon for brannskade
+nir::106285::Haukeland universitetssykehus - Thoraxkirurgisk intensiv og oppvåkningsseksjon TIO
+nir::103015::Helgelandssykehuset – Mo i Rana
+nir::103141::Helgelandssykehuset – Mosjøen
+nir::103149::Helgelandssykehuset – Sandnessjøen
+nir::101858::Helse Finnmark HF – Klinikk Hammerfest
+nir::101830::Helse Finnmark HF – Klinikk Kirkenes
+nir::102250::Helse Nord-Trøndelag HF – Levanger
+nir::105893::Helse Nord-Trøndelag HF – Namsos
+nir::706078::Kristiansund sykehus
+nir::706079::Molde sjukehus
+nir::4210053::Nordlandssykehuset HF – Bodø
+nir::110867::Nordlandssykehuset HF – Vesterålen (Stokmarknes)
+nir::111487::Oslo universitetssykehus HF – Aker
+nir::705576::Oslo universitetssykehus HF – Barneintensiv RH
+nir::111449::Oslo universitetssykehus HF - Barneintensiv, Ullevål
+nir::705577::Oslo universitetssykehus HF – Generell intensiv 1 RH
+nir::706929::Oslo universitetssykehus HF - Generell intensiv 2 RH
+nir::705597::Oslo universitetssykehus HF – Postoperativ avdeling RH
+nir::705757::Oslo universitetssykehus HF – Radiumhospitalet
+nir::700419::Oslo universitetssykehus HF – Rikshospitalet
+nir::705699::Oslo universitetssykehus HF – Thorax 1 RH
+nir::705772::Oslo universitetssykehus HF – Thorax 2 RH
+nir::109773::Oslo universitetssykehus HF – Ullevål Kir. int. (2)
+nir::109870::Oslo universitetssykehus HF - Ullevål Medisinsk intensiv
+nir::109779::Oslo universitetssykehus HF – Ullevål Nevroint. (3)
+nir::109778::Oslo universitetssykehus HF – Ullevål Oppvåkning
+nir::109877::Oslo universitetssykehus HF - Ullevål Thoraxkir. Intensiv
+nir::4208928::St. Olavs Hospital HF - Barneintensiv
+nir::106572::St. Olavs Hospital HF - Hjertemedisin overvåking
+nir::4201313::St. Olavs Hospital HF - Hovedintensiv
+nir::706032::St. Olavs Hospital HF - Thoraxanestesi og intensiv
+nir::114282::Stavanger universitetssjukehus
+nir::103090::Sykehuset Asker og Bærum HF
+nir::103620::Sykehuset Buskerud HF - Drammen
+nir::103948::Sykehuset i Vestfold  – Tønsberg
+nir::108609::Sykehuset Innlandet – Elverum
+nir::108618::Sykehuset Innlandet – Gjøvik
+nir::108610::Sykehuset Innlandet – Hamar
+nir::108626::Sykehuset Innlandet – Lillehammer
+nir::102026::Sykehuset Telemark HF – Skien
+nir::4209889::Sykehuset Østfold HF – Fredrikstad
+nir::4208039::Sykehuset Østfold HF – Moss (ikke i bruk etter 2013)
+nir::104450::Sørlandet sykehus HF – Arendal
+nir::114240::Sørlandet sykehus HF – Kristiansand
+nir::700617::Universitetssykehuset Nord-Norge – Harstad
+nir::700618::Universitetssykehuset Nord-Norge – Narvik
+nir::700620::Universitetssykehuset Nord-Norge – Oppvåkning Tromsø
+nir::700619::Universitetssykehuset Nord-Norge – Tromsø Kir. int.
+nir::601302::Universitetssykehuset Nord-Norge - Tromsø Medisinsk intensiv
+nir::9999::Utlandet
+nir::108308::Ålesund sjukehus – kirurgisk
+nir::102673::Ålesund sjukehus - medisinsk

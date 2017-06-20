@@ -47,6 +47,8 @@ Hos disse er svaret selvsagt «Nei» på punkt 2.-5.). Dette vil typisk gjelde m
 |På eget eller annet sykehus
 
 |3|Klinisk|Døde pasienten i løpet av de første 24t på intensiv?
+
+Gjelder ikke for pasienter som kommer til intensiv for å dø.
 |
 |4|Klinisk|Har pasienten fått mekanisk respirasjonsstøtte noen gang i løpet av hele oppholdet?
 
@@ -236,6 +238,7 @@ Røntgen thorax, ECCO, EKG, fysioterapi, ordinære sårskift, suging, innleggels
 CAUTION: Maksimalt antall poeng for et døgn 56 p
 
 
+
 == Årsak til innleggelse 
 
 Årsak til innleggelse i intensivavdelingen (modifisert etter APACHE III)
@@ -406,11 +409,26 @@ Formål:: For å registrere en skåring av ressursbruk ved intensiv- og postoper
 
 Bruk:: NEMS skåres vanligvis av sykepleier og skåringen skal gjøres en gang per døgn. Skåringen gjennomføres per pasient ved å besvare syv spørsmål. Svarene gir ulik poengverdi og oppsummeres i en samlet NEMS-score. Høy skår indikerer høy ressursbruk.
 
+.Mindmap NEMS Score
 image::nems_score_mindmap.png[]
 
 [[SOFA_SCORE]]
 ==== SOFA Score 
 
+SOFA (Sequential Organ Failure Assessment)  er en skår for dysfunksjon/svikt i seks ulike organsystemer hos voksne (> 16 år) intensivpasienter. Skåringen gjøres en gang i døgnet, på et fast tidspunkt (f. eks. kl. 07 eller 08), og skal gjøres med utgangspunkt i de mest avvikende verdiene de foregående 24 timer.
+
+Ved manglende verdi, settes siste foregående målte verdi inn. Der det ikke foreligger noen data settes som default SOFA = 0 (normal verdi) 
+
+Skåringen kan benyttes på en rekke måter: 
+
+* Som individuelle skåringer for hvert organ for å bestemme utviklingen av dysfunksjon i organ
+* Som en sum av skåringer på en intensiv dag 
+* Som en sum av de verste skoringene i løpet av intensiv oppholdet 
+
+Det antas å gi bedre stratifisering av dødelighetsrisikoen hos pasientene ved intensiv gitt at dataene som brukes til å beregne poengsummen ikke er begrenset til verdier fra innleggelsen. 
+
+
+.Tabellarisk fremstilling av SOFA score 
 [cols="^1m,6*4",options="header"]
 |===
 ^|Grad ^|Sirkulasjon footnote:[Alle doser gitt i µg/kg/min, DA= Dopamin, NA=Noradrenalin, A=Adrenalin ] ^|Respirasjon footnote:[3 eller 4 poeng bare for pasienter på respirator (NIV+IPPV)] ^| Nyrefunksjon ^| SNS ^|Koagulasjon ^| Lever
@@ -465,20 +483,11 @@ image::nems_score_mindmap.png[]
 |===
 
 
-* The scores can be used in a number of ways:
-
-** As individual scores for each organ to determine progression of organ dysfunction.
-** As the sum of scores on one single ICU day.
-** As the sum of the worst scores during the ICU stay.
-
-* It is believed to provide a better stratification of the mortality risk in ICU patients given that the data used to calculate the score is not restricted to admission values. 
-
-Sequential Organ Failure Assessment (SOFA) er en skår for dysfunksjon/svikt i seks ulike organsystemer hos voksne (> 16 år) intensivpasienter. Skåringen gjøres en gang i døgnet, på et fast tidspunkt (f. eks. kl. 07 eller 08), og skal gjøres med utgangspunkt i de mest avvikende verdiene de foregående 24 timer.
-
-Ved manglende verdi, settes siste foregående målte verdi inn. Der det ikke foreligger noen data settes som default SOFA = 0 (normal verdi) 
+.Mindmap for SOFA arketype
+image::sofa_score_mindmap.png[]
 
 
-
+.Eksempel på skjema for SOFA score
 image::sofa_arena_form.png[]
 
 [[PIM3_SCORE]]
@@ -531,10 +540,27 @@ exp(PIM3 score)/[1 + exp (PIM3 score)].
 
 
 
-=== Regler 
+== Regler 
+Det er en rekke regler som benyttes for scoringer og beregninger. I dette avsnittet beskrives noen av disse. 
 
-==== GDL 
+=== GDL 
+
+* https://gdl-lang.org/[GDL Lang Org]
+
+==== SOFA
 
 * https://github.com/gdl-lang/common-clinical-models/blob/master/guidelines/SOFA.v1.gdl[SOFA.v1.gdl]
+* https://github.com/gdl-lang/common-clinical-models/blob/master/guidelines/SOFA_Interpretation.v1.gdl[SOFA_Interpretation.v1.gdl]
 
+.Skjermbilde fra definisjonen av SOFA.v1 GDL score
 image::gdl_sofa_definitions.png[]
+
+
+
+== Vedlegg: Overflytning 
+Følgende koder benyttes i NIR for å registrere hvilke intensivenheter som pasienten overføres til. 
+
+[source]
+----
+include::Nir_Foretak_Overflytning.txt[]
+----
