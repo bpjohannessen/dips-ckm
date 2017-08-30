@@ -2,7 +2,7 @@ archetype (adl_version=1.4)
 	openEHR-EHR-OBSERVATION.growth_chart_parents_dips.v1
 
 concept
-	[at0000]	-- Growth chart parental information
+	[at0000]	-- Vekstkurve foreldreinformasjon
 language
 	original_language = <[ISO_639-1::nb]>
 	translations = <
@@ -21,16 +21,16 @@ description
 		["date"] = <"2017-08-22">
 	>
 	details = <
-		["nb"] = <
-			language = <[ISO_639-1::nb]>
-			purpose = <"Brukes for å registrere informasjon om et barns foreldre som brukes i vekstkurve.">
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"Archetype for registering information about a child's parents for its growth chart.">
 			use = <"">
 			misuse = <"">
 			copyright = <"DIPS AS">
 		>
-		["en"] = <
-			language = <[ISO_639-1::en]>
-			purpose = <"Archetype for registering information about a child's parents for its growth chart.">
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			purpose = <"Brukes for å registrere informasjon om et barns foreldre som brukes i vekstkurve.">
 			use = <"">
 			misuse = <"">
 			copyright = <"DIPS AS">
@@ -39,19 +39,19 @@ description
 	lifecycle_state = <"0">
 	other_contributors = <"Bjørn-Petter Johannessen, DIPS AS, Norway", ...>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"398D160662EC2581EA38B4B9C7328C29">
+		["MD5-CAM-1.0.1"] = <"6C16EFFCE279F867D68C60C53FF26AB0">
 	>
 
 definition
-	OBSERVATION[at0000] matches {	-- Growth chart parental information
+	OBSERVATION[at0000] matches {	-- Vekstkurve foreldreinformasjon
 		data matches {
 			HISTORY[at0001] matches {	-- Event Series
 				events cardinality matches {1..*; unordered} matches {
-					POINT_EVENT[at0012] occurrences matches {0..1} matches {	-- Any event
+					POINT_EVENT[at0012] occurrences matches {0..1} matches {	-- Any Point-in-time event
 						data matches {
 							ITEM_TREE[at0003] matches {	-- Tree
 								items cardinality matches {0..*; unordered} matches {
-									ELEMENT[at0014] occurrences matches {0..1} matches {	-- Weight mother
+									ELEMENT[at0014] occurrences matches {0..1} matches {	-- Vekt mor
 										value matches {
 											C_DV_QUANTITY <
 												property = <[openehr::124]>
@@ -64,12 +64,12 @@ definition
 											>
 										}
 									}
-									ELEMENT[at0015] occurrences matches {0..1} matches {	-- Weight mother comment
+									ELEMENT[at0015] occurrences matches {0..1} matches {	-- Vekt mor kommentar
 										value matches {
 											DV_TEXT matches {*}
 										}
 									}
-									ELEMENT[at0004] occurrences matches {0..1} matches {	-- Height/Length mother
+									ELEMENT[at0004] occurrences matches {0..1} matches {	-- Høyde/lengde mor
 										value matches {
 											C_DV_QUANTITY <
 												property = <[openehr::122]>
@@ -82,12 +82,12 @@ definition
 											>
 										}
 									}
-									ELEMENT[at0010] occurrences matches {0..1} matches {	-- Height/Length mother comment
+									ELEMENT[at0010] occurrences matches {0..1} matches {	-- Høyde/lengde mor kommentar
 										value matches {
 											DV_TEXT matches {*}
 										}
 									}
-									ELEMENT[at0006] occurrences matches {0..1} matches {	-- Head circumference mother
+									ELEMENT[at0006] occurrences matches {0..1} matches {	-- Hodeomkrets mor
 										value matches {
 											C_DV_QUANTITY <
 												property = <[openehr::122]>
@@ -99,12 +99,12 @@ definition
 											>
 										}
 									}
-									ELEMENT[at0016] occurrences matches {0..1} matches {	-- Head circumference mother comment
+									ELEMENT[at0016] occurrences matches {0..1} matches {	-- Hodeomkrets mor kommentar
 										value matches {
 											DV_TEXT matches {*}
 										}
 									}
-									ELEMENT[at0013] occurrences matches {0..1} matches {	-- BMI mother
+									ELEMENT[at0013] occurrences matches {0..1} matches {	-- KMI mor
 										value matches {
 											C_DV_QUANTITY <
 												property = <[openehr::349]>
@@ -117,12 +117,12 @@ definition
 											>
 										}
 									}
-									ELEMENT[at0017] occurrences matches {0..1} matches {	-- BMI mother comment
+									ELEMENT[at0017] occurrences matches {0..1} matches {	-- KMI mor kommentar
 										value matches {
 											DV_TEXT matches {*}
 										}
 									}
-									ELEMENT[at0019] occurrences matches {0..1} matches {	-- Weight father
+									ELEMENT[at0019] occurrences matches {0..1} matches {	-- Vekt far
 										value matches {
 											C_DV_QUANTITY <
 												property = <[openehr::124]>
@@ -135,12 +135,12 @@ definition
 											>
 										}
 									}
-									ELEMENT[at0020] occurrences matches {0..1} matches {	-- Weight father comment
+									ELEMENT[at0020] occurrences matches {0..1} matches {	-- Vekt far kommentar
 										value matches {
 											DV_TEXT matches {*}
 										}
 									}
-									ELEMENT[at0022] occurrences matches {0..1} matches {	-- Height/Length father
+									ELEMENT[at0022] occurrences matches {0..1} matches {	-- Høyde/lengde far
 										value matches {
 											C_DV_QUANTITY <
 												property = <[openehr::122]>
@@ -153,12 +153,12 @@ definition
 											>
 										}
 									}
-									ELEMENT[at0021] occurrences matches {0..1} matches {	-- Height/Length father comment
+									ELEMENT[at0021] occurrences matches {0..1} matches {	-- Høyde/lengde far kommentar
 										value matches {
 											DV_TEXT matches {*}
 										}
 									}
-									ELEMENT[at0023] occurrences matches {0..1} matches {	-- Head circumference father
+									ELEMENT[at0023] occurrences matches {0..1} matches {	-- Hodeomkrets far
 										value matches {
 											C_DV_QUANTITY <
 												property = <[openehr::122]>
@@ -170,12 +170,12 @@ definition
 											>
 										}
 									}
-									ELEMENT[at0024] occurrences matches {0..1} matches {	-- Head circumference father comment
+									ELEMENT[at0024] occurrences matches {0..1} matches {	-- Hodeomkrets far kommentar
 										value matches {
 											DV_TEXT matches {*}
 										}
 									}
-									ELEMENT[at0025] occurrences matches {0..1} matches {	-- BMI father
+									ELEMENT[at0025] occurrences matches {0..1} matches {	-- KMI far
 										value matches {
 											C_DV_QUANTITY <
 												property = <[openehr::349]>
@@ -188,29 +188,29 @@ definition
 											>
 										}
 									}
-									ELEMENT[at0026] occurrences matches {0..1} matches {	-- BMI father comment
+									ELEMENT[at0026] occurrences matches {0..1} matches {	-- KMI far kommentar
 										value matches {
 											DV_TEXT matches {*}
 										}
 									}
-									ELEMENT[at0027] occurrences matches {0..1} matches {	-- Midparental height girl
+									ELEMENT[at0027] occurrences matches {0..1} matches {	-- Midparental høyde jente
 										value matches {
 											C_DV_QUANTITY <
 											>
 										}
 									}
-									ELEMENT[at0028] occurrences matches {0..1} matches {	-- Midparental height girl comment
+									ELEMENT[at0028] occurrences matches {0..1} matches {	-- Midparental høyde jente kommentar
 										value matches {
 											DV_TEXT matches {*}
 										}
 									}
-									ELEMENT[at0029] occurrences matches {0..1} matches {	-- Midparental height boy
+									ELEMENT[at0029] occurrences matches {0..1} matches {	-- Midparental høyde gutt
 										value matches {
 											C_DV_QUANTITY <
 											>
 										}
 									}
-									ELEMENT[at0030] occurrences matches {0..1} matches {	-- Midparental height boy comment
+									ELEMENT[at0030] occurrences matches {0..1} matches {	-- Midparental høyde gutt kommentar
 										value matches {
 											DV_TEXT matches {*}
 										}
@@ -257,7 +257,7 @@ ontology
 				>
 				["at0006"] = <
 					text = <"Hodeomkrets mor">
-					description = <"Hodeomkrets av mor. Målebåndet plasseres like over glabella og størsteomkrets måles.">
+					description = <"Hodeomkrets av mor. Målebåndet plasseres like over glabella og største omkrets måles.">
 				>
 				["at0008"] = <
 					text = <"Tree">
@@ -313,7 +313,7 @@ ontology
 				>
 				["at0023"] = <
 					text = <"Hodeomkrets far">
-					description = <"Hodeomkrets av far. Målebåndet plasseres like over glabella og størsteomkrets måles.">
+					description = <"Hodeomkrets av far. Målebåndet plasseres like over glabella og største omkrets måles.">
 				>
 				["at0024"] = <
 					text = <"Hodeomkrets far kommentar">
@@ -364,8 +364,8 @@ ontology
 					description = <"Height or length of the mother.">
 				>
 				["at0006"] = <
-					text = <"Head circumference mother">
-					description = <"Head circumference of the mother. The measuring tape is placed just superior to the glabella and the longest circumference is registered.">
+					text = <"*Hodeomkrets mor(nb)">
+					description = <"*Hodeomkrets av mor. Målebåndet plasseres like over glabella og største omkrets måles.(nb)">
 				>
 				["at0008"] = <
 					text = <"Tree">
@@ -373,7 +373,7 @@ ontology
 				>
 				["at0009"] = <
 					text = <"Comment">
-					description = <"">
+					description = <"*">
 				>
 				["at0010"] = <
 					text = <"Height/Length mother comment">
@@ -381,7 +381,7 @@ ontology
 				>
 				["at0012"] = <
 					text = <"Any event">
-					description = <"">
+					description = <"*">
 				>
 				["at0013"] = <
 					text = <"BMI mother">
@@ -420,8 +420,8 @@ ontology
 					description = <"Height or length of the father.">
 				>
 				["at0023"] = <
-					text = <"Head circumference father">
-					description = <"Head circumference of the father. The measuring tape is placed just superior to the glabella and the longest circumference is registered.">
+					text = <"*Hodeomkrets far(nb)">
+					description = <"*Hodeomkrets av far. Målebåndet plasseres like over glabella og største omkrets måles.(nb)">
 				>
 				["at0024"] = <
 					text = <"Head circumference father comment">
