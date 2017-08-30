@@ -60,5 +60,9 @@
       </item>
     </other_details>
   </description>
-  <definition xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.growth_chart_parents_dips.v1" concept_name="Vekstkurve foreldreinformasjon" />
+  <definition xsi:type="COMPOSITION" archetype_id="openEHR-EHR-COMPOSITION.growth_chart_persistent_dips.v1" concept_name="Vekstkurve Persistent" name="Vekstkurve foreldreinformasjon">
+    <Content xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.growth_chart_parents_dips.v1" concept_name="Vekstkurve foreldreinformasjon" path="/content" />
+    <Content xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.midparent_dips.v1" concept_name="Midtforeldrehøyde" max="1" path="/content" name="Midtforeldrehøyde jente" />
+    <Content xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.midparent_dips.v1" concept_name="Midtforeldrehøyde" max="1" path="/content" name="Midtforeldrehøyde gutt" />
+  </definition>
 </template>
